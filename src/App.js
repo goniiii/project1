@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import Brand from "./component/brand.js";
 
 function App() {
   let navigate = useNavigate();
@@ -11,31 +12,16 @@ function App() {
         <Container>
           <Navbar.Brand href="/">Green Table</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/shop">Shop</Nav.Link>
-            <Nav.Link href="/location">Location</Nav.Link>
+            <Nav.Link href="/brandstory">Brand Story</Nav.Link>
+            <Nav.Link href="/product">Product</Nav.Link>
+            <Nav.Link href="/expreience">Expreience</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
       <Routes>
+        <Route path="/brandstory" element={<Brand></Brand>} />
         <Route
           path="/"
-          element={
-            <div>
-              {" "}
-              <img width="80%" src="img/cereal.jpg"></img>
-              <img
-                width="40px"
-                src="img/free-icon.png"
-                onClick={() => {
-                  console.log("next");
-                }}
-              ></img>
-            </div>
-          }
-        />
-        <Route
-          path="/home"
           element={
             <div>
               <video width="100%" muted autoPlay loop>
