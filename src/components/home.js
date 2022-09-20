@@ -1,3 +1,6 @@
+import { Button } from "react-bootstrap";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
+
 function Home() {
   return (
     <div>
@@ -9,7 +12,28 @@ function Home() {
         <p>Sincere Energy in Nature</p>
       </div>
       <div>
-        <img width="50%" src="img/salad2.jpg"></img>
+        <img width="50%" height="500px" src="img/logo.jpg"></img>
+        <img width="50%" height="500px" src="img/salad2.jpg"></img>
+      </div>
+      <div className="bottom">
+        <h1 style={{ color: "darkgreen" }}>Experience</h1>
+        <br />
+        <br />
+        <Button variant="success">Instagram</Button>
+      </div>
+      <div>
+        <img
+          className="mainImg1"
+          width="50%"
+          height="500px"
+          src="img/main_salad (1).jpg"
+        ></img>
+        <img
+          className="mainImg2"
+          width="50%"
+          height="500px"
+          src="img/main_salad (2).jpg"
+        ></img>
       </div>
     </div>
   );
