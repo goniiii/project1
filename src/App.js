@@ -2,7 +2,11 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
-import Brand from "./component/brand.js";
+import Brand from "./components/brand.js";
+import Home from "./components/home.js";
+import Product from "./components/product.js";
+import Location from "./components/location.js";
+import Expereience from "./components/experience";
 
 function App() {
   let navigate = useNavigate();
@@ -15,37 +19,16 @@ function App() {
             <Nav.Link href="/brandstory">Brand Story</Nav.Link>
             <Nav.Link href="/product">Product</Nav.Link>
             <Nav.Link href="/expreience">Expreience</Nav.Link>
+            <Nav.Link href="/location">Location</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
       <Routes>
+        <Route path="/" element={<Home></Home>} />
         <Route path="/brandstory" element={<Brand></Brand>} />
-        <Route
-          path="/"
-          element={
-            <div>
-              <video width="100%" muted autoPlay loop>
-                <source src="video/forest.mp4" type="video/mp4"></source>
-              </video>
-            </div>
-          }
-        />
-        <Route
-          path="/shop"
-          element={
-            <div>
-              <p>shop 화면</p>
-            </div>
-          }
-        />
-        <Route
-          path="/location"
-          element={
-            <div>
-              <p>location 화면</p>
-            </div>
-          }
-        />
+        <Route path="/product" element={<Product></Product>} />
+        <Route path="/expreience" element={<Expereience></Expereience>} />
+        <Route path="/location" element={<Location></Location>} />
       </Routes>
     </div>
   );
