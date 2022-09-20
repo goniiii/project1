@@ -6,16 +6,17 @@ import Brand from "./components/brand.js";
 import Home from "./components/home.js";
 import Product from "./components/product.js";
 import Location from "./components/location.js";
-import Expereience from "./components/experience";
+import Expereience from "./components/experience.js";
+import Info from "./components/info.js";
 
 function App() {
   let navigate = useNavigate();
   return (
     <div className="App">
       <Navbar bg="light" variant="light">
-        <Container>
-          <Navbar.Brand href="/">Green Table</Navbar.Brand>
-          <Nav className="me-auto">
+        <Container className="navbar">
+          <Navbar.Brand href="/home">Green Table</Navbar.Brand>
+          <Nav className="navbar">
             <Nav.Link href="/brandstory">Brand Story</Nav.Link>
             <Nav.Link href="/product">Product</Nav.Link>
             <Nav.Link href="/expreience">Expreience</Nav.Link>
@@ -24,12 +25,13 @@ function App() {
         </Container>
       </Navbar>
       <Routes>
-        <Route path="/" element={<Home></Home>} />
+        <Route path="/home" element={<Home></Home>} />
         <Route path="/brandstory" element={<Brand></Brand>} />
         <Route path="/product" element={<Product></Product>} />
         <Route path="/expreience" element={<Expereience></Expereience>} />
         <Route path="/location" element={<Location></Location>} />
       </Routes>
+      <Info></Info>
     </div>
   );
 }

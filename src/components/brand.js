@@ -1,15 +1,8 @@
 function Brand() {
   return (
-    <div>
+    <div className="Brand">
       {" "}
-      <img width="80%" src="img/cereal.jpg"></img>
-      <img
-        width="40px"
-        src="img/free-icon.png"
-        onClick={() => {
-          console.log("next");
-        }}
-      ></img>
+      <img width="80%" src="img/pasta.jpg"></img>
     </div>
   );
 }
