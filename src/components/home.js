@@ -2,8 +2,9 @@ import { Button } from "react-bootstrap";
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 
 function Home() {
+  let navigate = useNavigate();
   return (
-    <div>
+    <div className="home">
       <video width="100%" muted autoPlay loop>
         <source src="video/forest.mp4" type="video/mp4"></source>
       </video>
@@ -27,12 +28,18 @@ function Home() {
           width="50%"
           height="500px"
           src="img/main_salad (1).jpg"
+          onClick={() => {
+            console.log("눌림");
+          }}
         ></img>
         <img
           className="mainImg2"
           width="50%"
           height="500px"
           src="img/main_salad (2).jpg"
+          onClick={() => {
+            console.log("눌림");
+          }}
         ></img>
       </div>
     </div>

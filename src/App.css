@@ -7,7 +7,8 @@
   padding: 50px;
 }
 .navbar {
-  position: relative;
+  height: 60px;
+  /* position: fixed; */
 }
 .Info {
   text-align: center;
@@ -54,13 +55,20 @@
   transition: all 0.5s linear;
 }
 .mainImg1:hover {
-  transform: scale(1.03);
-  transform: opacity(0.5);
+  filter: brightness(0.5);
 }
 .mainImg2 {
   transition: all 0.5s linear;
 }
 .mainImg2:hover {
-  transform: scale(1.03);
-  transform: opacity(0.5);
+  filter: brightness(0.5);
 }
+
+/* @media only screen and (max-width: 700px) {
+  h1 {
+    
+  }
+}
+
+@media only screen and (max-width: 400px) {
+} */

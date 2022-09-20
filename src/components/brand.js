@@ -1,10 +1,32 @@
-function Brand() {
+import Carousel from "react-bootstrap/Carousel";
+
+function DarkVariantExample() {
   return (
-    <div className="Brand">
-      {" "}
-      <img width="80%" src="img/pasta.jpg"></img>
-    </div>
+    <Carousel variant="dark">
+      <Carousel.Item>
+        <img className="d-block w-100" src="img/cereal.jpg" alt="First slide" />
+        <Carousel.Caption></Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src="img/pasta.jpg" alt="Second slide" />
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="img/mozzarella.jpg"
+          alt="Third slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="img/cuisine.jpg"
+          alt="Fourth slide"
+        />
+      </Carousel.Item>
+    </Carousel>
   );
 }
 
-export default Brand;
+export default DarkVariantExample;
