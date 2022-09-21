@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Navbar bg="light" variant="light">
         <Container className="navbar">
-          <Navbar.Brand href="/home">Green Table</Navbar.Brand>
+          <Navbar.Brand href="/">Green Table</Navbar.Brand>
           <Nav className="navbar">
             <Nav.Link href="/brandstory">Brand Story</Nav.Link>
             <Nav.Link href="/product">Product</Nav.Link>
@@ -25,11 +25,12 @@ function App() {
         </Container>
       </Navbar>
       <Routes>
-        <Route path="/home" element={<Home></Home>} />
+        <Route path="/" element={<Home></Home>} />
         <Route path="/brandstory" element={<Brand></Brand>} />
         <Route path="/product" element={<Product></Product>} />
         <Route path="/expreience" element={<Expereience></Expereience>} />
         <Route path="/location" element={<Location></Location>} />
+        <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
       <Info></Info>
     </div>
