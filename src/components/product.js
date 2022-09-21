@@ -27,6 +27,27 @@ function Product() {
         "아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아헤매는 나는야 그래놀라 유목민 이라구요?",
       imgPath: "img/blueberry.jpg",
     },
+    {
+      id: "pd004",
+      itemName: "그린테이블 초코 카카오 수제 그래놀라",
+      content:
+        "아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아헤매는 나는야 그래놀라 유목민 이라구요?",
+      imgPath: "img/muesli.jpg",
+    },
+    {
+      id: "pd005",
+      itemName: "그린테이블 초코 카카오 수제 그래놀라",
+      content:
+        "아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아헤매는 나는야 그래놀라 유목민 이라구요?",
+      imgPath: "img/cereal4.jpg",
+    },
+    {
+      id: "pd006",
+      itemName: "그린테이블 초코 카카오 수제 그래놀라",
+      content:
+        "아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아헤매는 나는야 그래놀라 유목민 이라구요?",
+      imgPath: "img/cereal5.jpg",
+    },
   ]);
   return (
     <Container>
@@ -48,6 +69,15 @@ function Product() {
                     }}
                   >
                     주문하기
+                  </Button>
+
+                  <Button
+                    variant="warning"
+                    onClick={() => {
+                      navigate("/product/" + products[i].id);
+                    }}
+                  >
+                    찜하기
                   </Button>
                 </Card.Body>
               </Card>
