@@ -14,12 +14,13 @@ function Home() {
       </div>
       <div>
         <img
+          className="mainlogo"
           width="50%"
           height="500px"
           src="img/logo.jpg"
-          cursor="pointer"
           onClick={() => {
             console.log("눌림");
+            navigate("/brandstory");
           }}
         ></img>
         <img width="50%" height="500px" src="img/salad2.jpg"></img>

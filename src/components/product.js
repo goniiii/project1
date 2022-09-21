@@ -1,41 +1,56 @@
 import { useState } from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card, CardGroup, Button } from "react-bootstrap";
+
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 
 function Product() {
-  let [products, setProducts] = useState([
-    {
-      id: "pd001",
-      itemName: "plate1",
-      content: "상품1",
-      imgPath: "tableware/mug.jpg",
-    },
-    {
-      id: "pd002",
-      itemName: "plate2",
-      content: "상품2",
-      imgPath: "tableware/whiteplate.jpg",
-    },
-  ]);
-
+  let navigate = useNavigate();
   return (
     <div>
-      {products.map((data, i) => {
-        let temp = [...products];
-        setProducts(temp);
-        return (
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>{products.itemName[i]}</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        );
-      })}
+      <CardGroup>
+        <Card>
+          <Card.Img variant="top" src="img/cereal.jpg" />
+          <Card.Body>
+            <Card.Title>그린테이블 시그니처 수제 그래놀라</Card.Title>
+            <Card.Text>
+              아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아
+              헤매는 나는야 '그래놀라 유목민' 이라구요?
+            </Card.Text>
+            <Button
+              onClick={() => {
+                navigate("/product/pd001");
+              }}
+            >
+              구매하기
+            </Button>
+          </Card.Body>
+          <Card.Footer>리뷰 67 평점 5/5</Card.Footer>
+        </Card>
+        <Card>
+          <Card.Img variant="top" src="img/berries.jpg" />
+          <Card.Body>
+            <Card.Title>그린테이블 저당 비건 수제 그래놀라</Card.Title>
+            <Card.Text>
+              아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아
+              헤매는 나는야 '그래놀라 유목민' 이라구요?
+            </Card.Text>
+            <Button>구매하기</Button>
+          </Card.Body>
+          <Card.Footer>리뷰 67 평점 5/5</Card.Footer>
+        </Card>
+        <Card>
+          <Card.Img variant="top" src="img/blueberry.jpg" />
+          <Card.Body>
+            <Card.Title>그린테이블 저당 비건 수제 그래놀라</Card.Title>
+            <Card.Text>
+              아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아
+              헤매는 나는야 '그래놀라 유목민' 이라구요?
+            </Card.Text>
+            <Button>구매하기</Button>
+          </Card.Body>
+          <Card.Footer>리뷰 67 평점 5/5</Card.Footer>
+        </Card>
+      </CardGroup>
     </div>
   );
 }

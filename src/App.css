@@ -1,5 +1,5 @@
 .App {
-  text-align: right;
+  text-align: center;
 }
 .Brand {
   text-align: center;
@@ -7,11 +7,11 @@
   padding: 50px;
 }
 
-.navbar {
+/* .navbar {
   width: 100%;
   height: 50px;
   position: fixed;
-}
+} */
 
 .Info {
   text-align: center;
@@ -46,23 +46,26 @@
   text-align: center;
   height: 300x;
 }
+.mainlogo {
+  cursor: pointer;
+}
 .mainImg1 {
   margin: 0px;
   padding: 30px;
+  transition: all 0.5s linear;
+  cursor: pointer;
 }
 .mainImg2 {
   margin: 0px;
   padding: 30px;
-}
-.mainImg1 {
   transition: all 0.5s linear;
+  cursor: pointer;
 }
+
 .mainImg1:hover {
   filter: brightness(0.5);
 }
-.mainImg2 {
-  transition: all 0.5s linear;
-}
+
 .mainImg2:hover {
   filter: brightness(0.5);
 }
