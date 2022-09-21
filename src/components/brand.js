@@ -8,15 +8,15 @@ function DarkVariantExample() {
         <Carousel.Caption></Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-75" src="img/pasta.jpg" alt="Second slide" />
+        <img
+          className="d-block w-75"
+          src="img/granola.jpg"
+          alt="Second slide"
+        />
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
-          className="d-block w-75"
-          src="img/mozzarella.jpg"
-          alt="Third slide"
-        />
+        <img className="d-block w-75" src="img/berry.jpg" alt="Third slide" />
       </Carousel.Item>
       {/* <Carousel.Item>
         <img

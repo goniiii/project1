@@ -63,7 +63,7 @@ function Product() {
                   <Card.Text>{products[i].content}</Card.Text>
 
                   <Button
-                    variant="success"
+                    variant="light"
                     onClick={() => {
                       navigate("/product/" + products[i].id);
                     }}
@@ -71,14 +71,14 @@ function Product() {
                     주문하기
                   </Button>
 
-                  <Button
+                  {/* <Button
                     variant="warning"
                     onClick={() => {
                       navigate("/product/" + products[i].id);
                     }}
                   >
                     찜하기
-                  </Button>
+                  </Button> */}
                 </Card.Body>
               </Card>
             </Col>

@@ -21,6 +21,7 @@ function App() {
             <Nav.Link href="/brandstory">Brand Story</Nav.Link>
             <Nav.Link href="/product">Product</Nav.Link>
             <Nav.Link href="/expereience">Expereience</Nav.Link>
+            <Nav.Link href="/location">Location</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
