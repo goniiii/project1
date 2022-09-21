@@ -50,7 +50,7 @@ function Product() {
     },
   ]);
   return (
-    <Container>
+    <Container className="products">
       <Row sm={1} md={3}>
         {products.map((data, i) => {
           return (

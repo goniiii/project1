@@ -6,13 +6,17 @@ function Detail() {
   let [tabIndex, setTabIndex] = useState(0);
 
   return (
-    <div>
+    <div className="detail">
       <p>pd001 상세페이지</p>
-      <img width="50%" height="300px" src="img/cereal.jpg"></img>
-      <p>그래놀라</p>
+      <img
+        className="detail_image"
+        width="50%"
+        height="300px"
+        src="img/cereal.jpg"
+      ></img>
+      <p>대충 간략 설명 </p>
+      <p>결제 할수있게 </p>
 
-      <p>그래놀라</p>
-      <p>그래놀라</p>
       <div className="tab">
         <Nav variant="tabs" defaultActiveKey="link1">
           <Nav.Item>
@@ -60,11 +64,18 @@ function Detail() {
             </Nav.Link>
           </Nav.Item>
         </Nav>
-        <Comp tabIndex={tabIndex} />
+        <Comp />
+        {/* <Comp tabIndex={tabIndex} /> */}
       </div>
     </div>
   );
 }
 
-function Comp({ tabIndex }) {}
+function Comp() {
+  return (
+    <div>
+      <p>상세정보 tab</p>
+    </div>
+  );
+}
 export default Detail;
