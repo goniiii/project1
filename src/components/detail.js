@@ -17,6 +17,7 @@ function Detail() {
         <Nav variant="tabs" defaultActiveKey="link1">
           <Nav.Item>
             <Nav.Link
+              style={{ color: "gray" }}
               eventKey="link1"
               onClick={() => {
                 setTabIndex(0);
@@ -27,6 +28,7 @@ function Detail() {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link
+              style={{ color: "gray" }}
               eventKey="link2"
               onClick={() => {
                 setTabIndex(1);
@@ -37,6 +39,7 @@ function Detail() {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link
+              style={{ color: "gray" }}
               eventKey="link3"
               onClick={() => {
                 setTabIndex(2);
@@ -47,6 +50,7 @@ function Detail() {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link
+              style={{ color: "gray" }}
               eventKey="link4"
               onClick={() => {
                 setTabIndex(3);
@@ -56,9 +60,11 @@ function Detail() {
             </Nav.Link>
           </Nav.Item>
         </Nav>
-        {/* <Comp tabIndex={tabIndex} /> */}
+        <Comp tabIndex={tabIndex} />
       </div>
     </div>
   );
 }
+
+function Comp({ tabIndex }) {}
 export default Detail;

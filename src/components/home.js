@@ -1,5 +1,5 @@
-import { Button } from "react-bootstrap";
-import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { Button, Link } from "react-bootstrap";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 function Home() {
   let navigate = useNavigate();
@@ -26,10 +26,12 @@ function Home() {
         <img width="50%" height="500px" src="img/salad2.jpg"></img>
       </div>
       <div className="bottom">
-        <h1 style={{ color: "darkgreen" }}>Experience</h1>
+        {/* <h1 style={{ color: "darkgreen" }}>Experience</h1> */}
         <br />
         <br />
-        <Button variant="success">Instagram</Button>
+        <a href="https://www.instagram.com/" variant="success">
+          Instagram
+        </a>
       </div>
       <div class="user-wrap">
         <img
