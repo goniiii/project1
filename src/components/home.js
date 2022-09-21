@@ -31,24 +31,20 @@ function Home() {
         <br />
         <Button variant="success">Instagram</Button>
       </div>
-      <div>
+      <div class="user-wrap">
         <img
           className="mainImg1"
           width="50%"
           height="500px"
           src="img/main_salad (1).jpg"
-          onClick={() => {
-            console.log("눌림");
-          }}
+          onClick={() => {}}
         ></img>
         <img
           className="mainImg2"
           width="50%"
           height="500px"
           src="img/main_salad (2).jpg"
-          onClick={() => {
-            console.log("눌림");
-          }}
+          onClick={() => {}}
         ></img>
       </div>
     </div>

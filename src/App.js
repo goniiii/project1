@@ -31,7 +31,6 @@ function App() {
         <Route path="/expreience" element={<Expereience></Expereience>} />
         <Route path="/location" element={<Location></Location>} />
         <Route path="/product/pd001" element={<Detail></Detail>} />
-
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
 
