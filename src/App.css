@@ -6,10 +6,13 @@
   background-color: white;
   padding: 50px;
 }
+
 .navbar {
-  height: 60px;
-  /* position: fixed; */
+  width: 100%;
+  height: 50px;
+  position: fixed;
 }
+
 .Info {
   text-align: center;
   padding: 40px;

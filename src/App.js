@@ -14,9 +14,9 @@ function App() {
   return (
     <div className="App">
       <Navbar bg="light" variant="light">
-        <Container className="navbar">
+        <Container className="navbar1">
           <Navbar.Brand href="/">Green Table</Navbar.Brand>
-          <Nav className="navbar">
+          <Nav className="navbars1">
             <Nav.Link href="/brandstory">Brand Story</Nav.Link>
             <Nav.Link href="/product">Product</Nav.Link>
             <Nav.Link href="/expreience">Expreience</Nav.Link>
