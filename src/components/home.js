@@ -13,7 +13,15 @@ function Home() {
         <p>Sincere Energy in Nature</p>
       </div>
       <div>
-        <img width="50%" height="500px" src="img/logo.jpg"></img>
+        <img
+          width="50%"
+          height="500px"
+          src="img/logo.jpg"
+          cursor="pointer"
+          onClick={() => {
+            console.log("눌림");
+          }}
+        ></img>
         <img width="50%" height="500px" src="img/salad2.jpg"></img>
       </div>
       <div className="bottom">
