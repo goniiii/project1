@@ -23,31 +23,49 @@ function Home() {
             navigate("/brandstory");
           }}
         ></img>
-        <img width="50%" height="500px" src="img/salad2.jpg"></img>
+        <img width="50%" height="500px" src="img/grain.jpg"></img>
       </div>
       <div className="bottom">
         {/* <h1 style={{ color: "darkgreen" }}>Experience</h1> */}
         <br />
         <br />
+        <h2>Expereience</h2>
+        {/* <img width="140px" src="img/instagram.jpg"></img>
         <a href="https://www.instagram.com/" variant="success">
           Instagram
-        </a>
+        </a> */}
       </div>
-      <div class="user-wrap">
+      {/* <div class="user-wrap">
         <img
           className="mainImg1"
           width="50%"
           height="500px"
-          src="img/main_salad (1).jpg"
+          src="img/wheat.jpg"
           onClick={() => {}}
         ></img>
         <img
           className="mainImg2"
           width="50%"
           height="500px"
-          src="img/main_salad (2).jpg"
+          src="img/wheat2.jpg"
           onClick={() => {}}
         ></img>
+      </div> */}
+      <div class="lb-wrap">
+        <div class="lb-text">
+          <h1 style={{ color: "white" }}>instagram</h1>
+        </div>
+        <div class="lb-image">
+          <img width="500px" src="img/wheat.jpg" alt="" />
+        </div>
+      </div>
+      <div class="lb-wrap">
+        <div class="lb-text">
+          <h1 style={{ color: "white" }}>YouTube</h1>
+        </div>
+        <div class="lb-image">
+          <img width="500px" src="img/wheat2.jpg" alt="" />
+        </div>
       </div>
     </div>
   );

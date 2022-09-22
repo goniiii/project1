@@ -14,7 +14,7 @@ function Detail() {
         height="300px"
         src="img/cereal.jpg"
       ></img>
-      <p>대충 간략 설명 </p>
+      <p>그린테이블 시그니처 그래놀라 </p>
       <p>결제 할수있게 </p>
 
       <div className="tab">

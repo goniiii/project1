@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
-
+@import url("https://fonts.googleapis.com/css2? family= Noto+Sans+KR & display=swap");
 .App {
   text-align: center;
   font-family: "Single Day", cursive;
@@ -14,19 +14,51 @@
 .products {
   font-family: "Gamja Flower", cursive;
 }
-/* .navbar {
-  width: 100%;
+.navbar {
+  font-family: "Noto Sans KR", sans-serif;
+  /* width: 100%;
   height: 50px;
-  position: fixed;
-} */
+  position: fixed; */
+}
+.lb-wrap {
+  width: 50%;
+  margin: 10px auto;
+  /* border: 1px solid #000000; */
+  position: relative;
+}
+.lb-wrap img {
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.lb-wrap img:hover {
+  /* transform: scale(1.1); */
+
+  filter: brightness(0.5);
+  filter: blur(0.5);
+}
+.lb-text {
+  padding: 10px 20px;
+  /* background-color: #ffeebc; */
+  text-align: center;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .detail {
-  font-family: "Gamja Flower", cursive;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .detail_image {
   float: left;
   clear: both;
 }
-
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
 .Info {
   text-align: center;
   float: left;
@@ -64,7 +96,7 @@
 .mainlogo {
   cursor: pointer;
 }
-.mainImg1 {
+/* .mainImg1 {
   margin: 0px;
   padding: 30px;
   transition: all 0.5s linear;
@@ -83,7 +115,7 @@
 
 .mainImg2:hover {
   filter: brightness(0.5);
-}
+} */
 
 /* @media only screen and (max-width: 700px) {
   h1 {
