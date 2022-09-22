@@ -55,7 +55,7 @@ function Product() {
         {products.map((data, i) => {
           return (
             <Col>
-              <Card style={{ width: "18rem" }}>
+              <Card style={{ width: "23rem" }}>
                 <Card.Img variant="top" src={products[i].imgPath} />
                 <Card.Body>
                   <Card.Title>{products[i].itemName}</Card.Title>
@@ -79,6 +79,9 @@ function Product() {
                   >
                     찜하기
                   </Button> */}
+                </Card.Body>
+                <Card.Body>
+                  <Card>리뷰 67 / 찜 899</Card>
                 </Card.Body>
               </Card>
             </Col>

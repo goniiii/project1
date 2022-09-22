@@ -1,6 +1,7 @@
 import { Tab, Tabs, Nav } from "react-bootstrap";
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
+// import { cereal } from "../img/cereal.jpg";
 
 function Detail() {
   let [tabIndex, setTabIndex] = useState(0);
@@ -8,7 +9,7 @@ function Detail() {
   return (
     <div className="detail">
       {/* <p>pd001 상세페이지</p> */}
-      <img className="detail_image" src="img/cereal.jpg"></img>
+      <img className="detail_image" src="/img/cereal.jpg"></img>
       <div className="detail_info">
         <span>상품 간략 소개 가격 등등등</span>
       </div>
@@ -69,6 +70,7 @@ function Detail() {
 }
 
 function Comp({ tabIndex }) {
+  let [inputValue, setInputValue] = useState("");
   return (
     <div>
       {
@@ -88,17 +90,30 @@ function Comp({ tabIndex }) {
           </div>,
           <div>
             <p>문의페이지</p>
-
-            <input
-              className="qna"
-              type="text"
-              placeholder="문의를 남겨주세요."
-            ></input>
-            <button style={{ margin: "20px" }}>작성하기</button>
+            <form>
+              <input
+                className="qna"
+                type="text"
+                placeholder="문의를 남겨주세요."
+                onChange={(e) => {
+                  console.log(e.target.value);
+                  setInputValue(e.target.value);
+                }}
+              ></input>
+              <button
+                style={{ margin: "20px" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  console.log(inputValue);
+                }}
+              >
+                작성하기
+              </button>
+              <p>{inputValue}</p>
+            </form>
           </div>,
           <div>
-            반품/교환
-            <img src="img/info.jpg"></img>
+            <img src="/img/info.jpg"></img>
           </div>,
         ][tabIndex]
       }
