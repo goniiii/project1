@@ -65,6 +65,7 @@ function Detail() {
           </Nav.Item>
         </Nav>
         <Comp />
+
         {/* <Comp tabIndex={tabIndex} /> */}
       </div>
     </div>
