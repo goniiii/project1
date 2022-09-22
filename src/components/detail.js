@@ -7,15 +7,11 @@ function Detail() {
 
   return (
     <div className="detail">
-      <p>pd001 상세페이지</p>
-      <img
-        className="detail_image"
-        width="50%"
-        height="300px"
-        src="img/cereal.jpg"
-      ></img>
-      <p>그린테이블 시그니처 그래놀라 </p>
-      <p>결제 할수있게 </p>
+      {/* <p>pd001 상세페이지</p> */}
+      <img className="detail_image" src="img/cereal.jpg"></img>
+      <div className="detail_info">
+        <span>상품 간략 소개 가격 등등등</span>
+      </div>
 
       <div className="tab">
         <Nav variant="tabs" defaultActiveKey="link1">
@@ -64,18 +60,28 @@ function Detail() {
             </Nav.Link>
           </Nav.Item>
         </Nav>
-        <Comp />
+        {/* <Comp /> */}
 
-        {/* <Comp tabIndex={tabIndex} /> */}
+        <Comp tabIndex={tabIndex} />
       </div>
     </div>
   );
 }
 
-function Comp() {
+function Comp({ tabIndex }) {
   return (
     <div>
-      <p>상세정보 tab</p>
+      {
+        ([
+          <div>
+            <p>상품정보</p>
+          </div>,
+          <div>
+            <p>리뷰</p>
+          </div>,
+        ],
+        [tabIndex])
+      }
     </div>
   );
 }

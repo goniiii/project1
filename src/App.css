@@ -2,6 +2,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
 @import url("https://fonts.googleapis.com/css2? family= Noto+Sans+KR & display=swap");
+
+.grid-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 30px 0;
+}
+.grid-image img {
+  width: calc(50% - 10px);
+  margin: 0 15px 15px 0;
+}
+.grid-image img:nth-of-type(2n),
+.grid-image img:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 640px) {
+  .grid-image img {
+    width: calc(50% - 15px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .grid-image img:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  .grid-image img:nth-of-type(2n) {
+    margin-right: 15px;
+  }
+}
 .App {
   text-align: center;
   font-family: "Single Day", cursive;
@@ -11,6 +39,7 @@
   background-color: white;
   padding: 50px;
 }
+
 .products {
   font-family: "Gamja Flower", cursive;
 }
@@ -54,10 +83,24 @@
 .detail_image {
   float: left;
   clear: both;
+  margin-left: 80px;
+
+  /* margin-top: 100px; */
+  width: 50%;
+  height: 300px;
+}
+.detail_info {
+  margin-top: 100px;
+  margin-right: 200px;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
+}
+.tab {
+  margin: 100px;
+  width: 100%;
+  float: left;
 }
 .Info {
   text-align: center;
@@ -96,32 +139,3 @@
 .mainlogo {
   cursor: pointer;
 }
-/* .mainImg1 {
-  margin: 0px;
-  padding: 30px;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.mainImg2 {
-  margin: 0px;
-  padding: 30px;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-
-.mainImg1:hover {
-  filter: brightness(0.5);
-}
-
-.mainImg2:hover {
-  filter: brightness(0.5);
-} */
-
-/* @media only screen and (max-width: 700px) {
-  h1 {
-    
-  }
-}
-
-@media only screen and (max-width: 400px) {
-} */

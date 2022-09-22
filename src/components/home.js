@@ -51,21 +51,30 @@ function Home() {
           onClick={() => {}}
         ></img>
       </div> */}
-      <div class="lb-wrap">
-        <div class="lb-text">
-          <h1 style={{ color: "white" }}>instagram</h1>
+
+      <div class="grid-image">
+        <div class="lb-wrap">
+          <div class="lb-text">
+            <h1 style={{ color: "white" }}>instagram</h1>
+          </div>
+          <div class="lb-image">
+            <a href="https://www.instagram.com/our.granola/?utm_medium=copy_link">
+              <img width="500px" src="img/wheat.jpg" alt="" />
+            </a>
+          </div>
         </div>
-        <div class="lb-image">
-          <img width="500px" src="img/wheat.jpg" alt="" />
+        <div class="lb-wrap">
+          <div class="lb-text">
+            <h1 style={{ color: "white" }}>YouTube</h1>
+          </div>
+          <div class="lb-image">
+            <a href="https://www.youtube.com/c/ORIONworld">
+              <img width="500px" src="img/wheat2.jpg" alt="" />
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="lb-wrap">
-        <div class="lb-text">
-          <h1 style={{ color: "white" }}>YouTube</h1>
-        </div>
-        <div class="lb-image">
-          <img width="500px" src="img/wheat2.jpg" alt="" />
-        </div>
+        {/* <img alt="" src="img/wheat.jpg" />
+        <img alt="" src="img/wheat2.jpg" /> */}
       </div>
     </div>
   );

@@ -22,6 +22,9 @@ function App() {
             <Nav className="me-auto">
               <Nav.Link href="/"></Nav.Link>
               <Nav.Link href="/brandstory">Brand Story</Nav.Link>
+
+              <Nav.Link href="/experience">Expereience</Nav.Link>
+              <Nav.Link href="/location">Location</Nav.Link>
               <NavDropdown title="Products" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/products/new">New</NavDropdown.Item>
                 <NavDropdown.Item href="/products/best">Best</NavDropdown.Item>
@@ -31,8 +34,6 @@ function App() {
                   Separated link
                 </NavDropdown.Item> */}
               </NavDropdown>
-              <Nav.Link href="/experience">Expereience</Nav.Link>
-              <Nav.Link href="/location">Location</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
