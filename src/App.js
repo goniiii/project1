@@ -34,6 +34,7 @@ function App() {
                   Separated link
                 </NavDropdown.Item> */}
               </NavDropdown>
+              <Nav.Link href="/mypage">My page</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

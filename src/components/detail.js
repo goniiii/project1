@@ -72,15 +72,35 @@ function Comp({ tabIndex }) {
   return (
     <div>
       {
-        ([
+        [
           <div>
             <p>상품정보</p>
           </div>,
           <div>
-            <p>리뷰</p>
+            <p>리뷰 페이지</p>
+            <p>베스트 리뷰</p>
+            <input
+              className="qna"
+              type="text"
+              placeholder="리뷰를 남겨주세요."
+            ></input>
+            <button style={{ margin: "20px" }}>작성하기</button>
           </div>,
-        ],
-        [tabIndex])
+          <div>
+            <p>문의페이지</p>
+
+            <input
+              className="qna"
+              type="text"
+              placeholder="문의를 남겨주세요."
+            ></input>
+            <button style={{ margin: "20px" }}>작성하기</button>
+          </div>,
+          <div>
+            반품/교환
+            <img src="img/info.jpg"></img>
+          </div>,
+        ][tabIndex]
       }
     </div>
   );
