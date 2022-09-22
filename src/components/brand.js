@@ -4,11 +4,17 @@ function DarkVariantExample() {
   return (
     <Carousel variant="dark">
       <Carousel.Item>
-        <img className="d-block w-75" src="img/cereal.jpg" alt="First slide" />
+        <img
+          style={{ marginLeft: "250px", height: "780px" }}
+          className="d-block w-75"
+          src="img/cereal.jpg"
+          alt="First slide"
+        />
         <Carousel.Caption></Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
+          style={{ marginLeft: "250px", height: "780px" }}
           className="d-block w-75"
           src="img/granola.jpg"
           alt="Second slide"
@@ -16,7 +22,12 @@ function DarkVariantExample() {
       </Carousel.Item>
 
       <Carousel.Item>
-        <img className="d-block w-75" src="img/berry.jpg" alt="Third slide" />
+        <img
+          style={{ marginLeft: "250px", height: "780px" }}
+          className="d-block w-75"
+          src="img/berry.jpg"
+          alt="Third slide"
+        />
       </Carousel.Item>
       {/* <Carousel.Item>
         <img
