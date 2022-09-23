@@ -3,18 +3,15 @@ import Carousel from "react-bootstrap/Carousel";
 function DarkVariantExample() {
   return (
     <div className="gt" style={{ fontFamily: "initial" }}>
+      <img src="img/breakfast.jpg" style={{ margin: "0", width: "100%" }}></img>
       <ul className="list">
         <li>
-          <img
-            src="img/breakfast.jpg"
-            style={{ width: "364px", height: "200px" }}
-          ></img>
           <div className="gt_info">
-            <h4>나와 내 가족이 먹고 싶은 상품을 판매합니다.</h4>
-            <p>
+            {/* <h4>나와 내 가족이 먹고 싶은 상품을 판매합니다.</h4> */}
+            {/* <p>
               "그린테이블은 사람의 몸에 이로운 상품이 우리의 삶까지 변화시킬 수
               있다고 믿습니다. 내가 먹고 쓰는 것이 곧 '나'이니까요."
-            </p>
+            </p> */}
           </div>
         </li>
         <li></li>

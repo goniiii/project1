@@ -44,6 +44,8 @@ html,
 
 /* Main ================================================================*/
 
+/*border radius  모서리 둥글게  */
+
 .App {
   text-align: center;
   font-family: "Single Day", cursive;
@@ -53,7 +55,6 @@ html,
 }
 .AppContent {
   flex: 1;
-  align-items: ;
 }
 
 .nav {
@@ -158,6 +159,10 @@ ul {
   padding-left: 50px;
   font-size: 20px;
   vertical-align: middle;
+}
+
+.list {
+  margin: 0;
 }
 
 /*product ================================================================*/
