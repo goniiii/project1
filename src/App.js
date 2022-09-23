@@ -9,6 +9,7 @@ import Location from "./components/location.js";
 import Expereience from "./components/experience.js";
 import Info from "./components/info.js";
 import Detail from "./components/detail.js";
+import Best from "./components/best.js";
 
 function App() {
   let navigate = useNavigate();
@@ -57,6 +58,7 @@ function App() {
         <Route path="/expreience" element={<Expereience></Expereience>} />
         <Route path="/location" element={<Location></Location>} />
         <Route path="/product/pd001" element={<Detail></Detail>} />
+        <Route path="/product/best" element={<Best></Best>} />
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
 

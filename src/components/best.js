@@ -3,7 +3,7 @@ import { Card, Button, Col, Row, Container } from "react-bootstrap";
 
 import { useNavigate } from "react-router-dom";
 
-function Product() {
+function Best() {
   let navigate = useNavigate();
   let [products, setProducts] = useState([
     {
@@ -50,40 +50,31 @@ function Product() {
     },
   ]);
   return (
-    <Container
-      className="products"
-      // style={{ margin: "0", marginRight: "10px", marginLeft: "0" }}
-    >
-      <div className="bg">
+    <Container className="products">
+      <div style={{ width: "100%", height: "250px" }}>
         <h1>Best Seller</h1>
-        {/* <img
-          className="bgimg"
-          src="img/grain.jpg"
-          style={{ zIndex: "0" }}
-        ></img> */}
+      </div>
+      <Row sm={1} md={3}>
+        {products.map((data, i) => {
+          return (
+            <Col>
+              <Card style={{ width: "23rem" }}>
+                <Card.Img variant="top" src={products[i].imgPath} />
+                <Card.Body>
+                  <Card.Title>{products[i].itemName}</Card.Title>
 
-        <div style={{ width: "100%", height: "250px" }}></div>
-        <Row sm={1} md={3}>
-          {products.map((data, i) => {
-            return (
-              <Col>
-                <Card style={{ width: "23rem" }}>
-                  <Card.Img variant="top" src={products[i].imgPath} />
-                  <Card.Body>
-                    <Card.Title>{products[i].itemName}</Card.Title>
+                  {/* <Card.Text>{products[i].content}</Card.Text> */}
 
-                    {/* <Card.Text>{products[i].content}</Card.Text> */}
+                  <Button
+                    variant="light"
+                    onClick={() => {
+                      navigate("/product/" + products[i].id);
+                    }}
+                  >
+                    주문하기
+                  </Button>
 
-                    <Button
-                      variant="light"
-                      onClick={() => {
-                        navigate("/product/" + products[i].id);
-                      }}
-                    >
-                      주문하기
-                    </Button>
-
-                    {/* <Button
+                  {/* <Button
                     variant="warning"
                     onClick={() => {
                       navigate("/product/" + products[i].id);
@@ -91,18 +82,17 @@ function Product() {
                   >
                     찜하기
                   </Button> */}
-                  </Card.Body>
-                  <Card.Body>
-                    <Card>리뷰 67 / 찜 899</Card>
-                  </Card.Body>
-                </Card>
-              </Col>
-            );
-          })}
-        </Row>
-        <div style={{ width: "100%", height: "200px" }}></div>
-      </div>
+                </Card.Body>
+                <Card.Body>
+                  <Card>리뷰 67 / 찜 899</Card>
+                </Card.Body>
+              </Card>
+            </Col>
+          );
+        })}
+      </Row>
+      <div style={{ width: "100%", height: "200px" }}></div>
     </Container>
   );
 }
-export default Product;
+export default Best;
