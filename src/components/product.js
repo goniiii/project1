@@ -52,14 +52,16 @@ function Product() {
   return (
     <div className="bg">
       <img className="bgImg" src="/img/grain.jpg" alt="bgImg"></img>
-      <h1>Best Seller</h1>
+      <div className="bgtext">
+        <h1>Best Seller</h1>
+      </div>
       <Container className="products">
-        <div style={{ width: "100%", height: "250px" }}></div>
+        <div style={{ width: "100%", height: "150px" }}></div>
         <Row sm={1} md={3}>
           {products.map((data, i) => {
             return (
               <Col>
-                <Card style={{ width: "23rem" }}>
+                <Card style={{ marginBottom: "50px", width: "20rem" }}>
                   <Card.Img variant="top" src={products[i].imgPath} />
                   <Card.Body>
                     <Card.Title>{products[i].itemName}</Card.Title>
