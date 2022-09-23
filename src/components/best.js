@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function Best() {
   let navigate = useNavigate();
+  let [like, setLike] = useState(false);
   let [products, setProducts] = useState([
     {
       id: "pd001",
@@ -68,7 +69,7 @@ function Best() {
                   <Button
                     variant="light"
                     onClick={() => {
-                      navigate("/product/" + products[i].id);
+                      navigate("/products/" + products[i].id);
                     }}
                   >
                     주문하기
@@ -84,7 +85,9 @@ function Best() {
                   </Button> */}
                 </Card.Body>
                 <Card.Body>
-                  <Card>리뷰 67 / 찜 899</Card>
+                  <Card>
+                    리뷰 67 / 찜<img src="img/heart.jpg"></img>899
+                  </Card>
                 </Card.Body>
               </Card>
             </Col>

@@ -1,5 +1,6 @@
 import { Button, Link } from "react-bootstrap";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import Info from "./info";
 
 function Home() {
   let navigate = useNavigate();

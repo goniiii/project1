@@ -1,7 +1,7 @@
 import { Tab, Tabs, Nav } from "react-bootstrap";
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
-// import { cereal } from "../img/cereal.jpg";
+import Review from "./review";
 
 function Detail() {
   let [tabIndex, setTabIndex] = useState(0);
@@ -81,6 +81,7 @@ function Comp({ tabIndex }) {
           <div>
             <p>리뷰 페이지</p>
             <p>베스트 리뷰</p>
+            <Review></Review>
             <input
               className="qna"
               type="text"

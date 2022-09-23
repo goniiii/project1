@@ -50,18 +50,10 @@ function Product() {
     },
   ]);
   return (
-    <Container
-      className="products"
-      // style={{ margin: "0", marginRight: "10px", marginLeft: "0" }}
-    >
-      <div className="bg">
-        <h1>Best Seller</h1>
-        {/* <img
-          className="bgimg"
-          src="img/grain.jpg"
-          style={{ zIndex: "0" }}
-        ></img> */}
-
+    <div className="bg">
+      <img className="bgImg" src="/img/grain.jpg" alt="bgImg"></img>
+      <h1>Best Seller</h1>
+      <Container className="products">
         <div style={{ width: "100%", height: "250px" }}></div>
         <Row sm={1} md={3}>
           {products.map((data, i) => {
@@ -101,8 +93,8 @@ function Product() {
           })}
         </Row>
         <div style={{ width: "100%", height: "200px" }}></div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 }
 export default Product;
