@@ -1,11 +1,22 @@
-import { Button, Link } from "react-bootstrap";
-import { Routes, Route, useNavigate } from "react-router-dom";
-import Info from "./info";
+import { useNavigate } from "react-router-dom";
+// import { useEffect, useState } from "react";
+import Scroll from "./scroll";
 
 function Home() {
   let navigate = useNavigate();
+  // let [ScrollY, setScrollY] = useState(0);
+
+  // useEffect(() => {
+  //   window.removeEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <div className="home">
+      <Scroll></Scroll>
       <video width="100%" muted autoPlay loop>
         <source src="video/forest.mp4" type="video/mp4"></source>
       </video>
@@ -13,7 +24,7 @@ function Home() {
         <h1>Green Table</h1>
         <p>Sincere Energy in Nature</p>
       </div>
-      <div>
+      <div className="mainImg">
         <img
           className="mainlogo"
           width="50%"
@@ -60,5 +71,11 @@ function Home() {
     </div>
   );
 }
+
+// function handleScroll() {
+//   let [ScrollY, setScrollY] = useState(0);
+//   const scrollTop = document.getElementById("app")?.scrollTop;
+//   setScrollY(scrollTop);
+// }
 
 export default Home;

@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
-import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate, Link } from "react-router-dom";
 import Brand from "./components/brand.js";
 import Home from "./components/home.js";
 import Product from "./components/product.js";
@@ -23,44 +22,86 @@ function App() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                  <Navbar.Brand href="/" style={{ fontSize: "2rem" }}>
+                  {/* <Navbar.Brand href="/" style={{ fontSize: "2rem" }}> */}
+                  {/* <Navbar.Link
+                    onClick={() => {
+                      navigate("/");
+                    }}
+                    style={{ fontSize: "2rem" }}
+                  >
                     Green Table
-                  </Navbar.Brand>
+                  </Navbar.Link> */}
                   {/* <Nav.Link href="/">Green Table</Nav.Link> */}
-                  <Nav.Link href="/brandstory">Brand Story</Nav.Link>
+                  <Nav.Link
+                    onClick={() => {
+                      navigate("/");
+                    }}
+                    style={{ fontSize: "2rem" }}
+                  >
+                    Green Table
+                  </Nav.Link>
+                  <Nav.Link
+                    onClick={() => {
+                      navigate("/brandstory");
+                    }}
+                  >
+                    Brand Story
+                  </Nav.Link>
 
-                  <Nav.Link href="/experience">Expereience</Nav.Link>
-                  <Nav.Link href="/location">Location</Nav.Link>
+                  <Nav.Link
+                    onClick={() => {
+                      navigate("/experience");
+                    }}
+                  >
+                    Expereience
+                  </Nav.Link>
+                  <Nav.Link
+                    onClick={() => {
+                      navigate("/location");
+                    }}
+                  >
+                    Location
+                  </Nav.Link>
                   <NavDropdown title="Products" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="/products/new">
+                    <NavDropdown.Item
+                      onClick={() => {
+                        navigate("/products/new");
+                      }}
+                    >
                       New
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/products/best">
+                    <NavDropdown.Item
+                      onClick={() => {
+                        navigate("/products/best");
+                      }}
+                    >
                       Best
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/products">All</NavDropdown.Item>
+                    <NavDropdown.Item
+                      onClick={() => {
+                        navigate("/products/all");
+                      }}
+                    >
+                      All
+                    </NavDropdown.Item>
                     {/* <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
                   Separated link
                 </NavDropdown.Item> */}
                   </NavDropdown>
-                  <Nav.Link href="/mypage">My page</Nav.Link>
+                  <Nav.Link
+                    onClick={() => {
+                      navigate("/mypage");
+                    }}
+                  >
+                    My page
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </div>
           </Container>
         </Navbar>
-        {/* <Navbar bg="light" variant="light">
-        <Container>
-          <Navbar.Brand href="/">Green Table</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="/brandstory">Brand Story</Nav.Link>
-            <Nav.Link href="/product">Product</Nav.Link>
-            <Nav.Link href="/expereience">Expereience</Nav.Link>
-            <Nav.Link href="/location">Location</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar> */}
+
         <Routes>
           <Route path="/" element={<Home></Home>} />
           <Route path="/brandstory" element={<Brand></Brand>} />
