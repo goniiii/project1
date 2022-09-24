@@ -31,27 +31,7 @@ function Home() {
         <br />
         <br />
         <h2>Expereience</h2>
-        {/* <img width="140px" src="img/instagram.jpg"></img>
-        <a href="https://www.instagram.com/" variant="success">
-          Instagram
-        </a> */}
       </div>
-      {/* <div class="user-wrap">
-        <img
-          className="mainImg1"
-          width="50%"
-          height="500px"
-          src="img/wheat.jpg"
-          onClick={() => {}}
-        ></img>
-        <img
-          className="mainImg2"
-          width="50%"
-          height="500px"
-          src="img/wheat2.jpg"
-          onClick={() => {}}
-        ></img>
-      </div> */}
 
       <div class="grid-image">
         <div class="lb-wrap">
