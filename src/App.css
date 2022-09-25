@@ -57,13 +57,14 @@ html,
   flex: 1;
 }
 
-.nav {
+.nav container {
   margin: 0;
+  width: 100%;
+}
+.nav {
+  height: 35px;
 }
 
-.nav a:active {
-  background-color: rgb(80, 152, 104);
-}
 .nav a {
   position: relative;
   overflow: hidden;
@@ -75,10 +76,13 @@ html,
   line-height: 50px;
   text-align: center;
   font-size: 1.2em;
-  background: #abc8ba;
-  color: #fff;
+  background: #fdfbfb;
+  color: rgb(92, 114, 97);
   text-decoration: none;
-  margin: 0 auto;
+  margin: auto;
+
+  padding: 5px;
+  padding-top: 0;
 }
 
 .nav a::after {
@@ -99,16 +103,19 @@ html,
 }
 .nav a:focus {
   color: rgb(43, 70, 43);
+  background-color: rgb(175, 207, 192);
+  border-radius: 100%;
+  background-size: 30px;
 }
 
-.navbar {
+/* .navbar {
   font-family: "Noto Sans KR", sans-serif;
 
   position: sticky;
 
   top: 0;
   z-index: 1;
-}
+} */
 .mainImg {
   opacity: 1;
   transform: translateZ(0);

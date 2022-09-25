@@ -21,17 +21,7 @@ function App() {
             <div>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
-                  {/* <Navbar.Brand href="/" style={{ fontSize: "2rem" }}> */}
-                  {/* <Navbar.Link
-                    onClick={() => {
-                      navigate("/");
-                    }}
-                    style={{ fontSize: "2rem" }}
-                  >
-                    Green Table
-                  </Navbar.Link> */}
-                  {/* <Nav.Link href="/">Green Table</Nav.Link> */}
+                <Nav>
                   <Nav.Link
                     onClick={() => {
                       navigate("/");
@@ -84,10 +74,10 @@ function App() {
                     >
                       All
                     </NavDropdown.Item>
-                    {/* <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item> */}
+                    {/* <NavDropdown.Divider /> */}
+                    {/* <NavDropdown.Item href="#action/3.4">
+                      Separated link
+                    </NavDropdown.Item> */}
                   </NavDropdown>
                   <Nav.Link
                     onClick={() => {
