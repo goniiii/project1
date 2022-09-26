@@ -1,4 +1,4 @@
-import { Tab, Tabs, Nav } from "react-bootstrap";
+import { Tab, Tabs, Nav, Button } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { Navigate } from "react-router-dom";
 import Review from "./review";
@@ -24,6 +24,8 @@ function Detail() {
       <Scroll></Scroll>
       {/* <p>pd001 상세페이지</p> */}
       <h2 className="menu_name">그린테이블 시그니처 그래놀라</h2>
+      <Button variant="success">구매하기</Button>
+      {/* <h3 className="menu_price">11000원</h3> */}
       <Menu1></Menu1>
       {/* <img className="detail_image" src="/img/cereal.jpg"></img> */}
       {/* <div className="detail_info">상품 간략 소개 가격 등등등</div> */}

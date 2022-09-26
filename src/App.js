@@ -31,7 +31,7 @@ function App() {
                     }}
                     style={{ fontSize: "2rem" }}
                   >
-                    Green Table
+                    Our Granola
                   </Nav.Link>
                   <Nav.Link
                     onClick={() => {

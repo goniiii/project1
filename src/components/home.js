@@ -19,11 +19,11 @@ function Home() {
       <Scroll></Scroll>
       <header className="header_home">
         <video width="100%" muted autoPlay loop>
-          <source src="video/forest.mp4" type="video/mp4"></source>
+          <source src="/video/main_video.mp4" type="video/mp4"></source>
         </video>
         <section className="jb-text">
-          <h1>Green Table</h1>
-          <p>Sincere Energy in Nature</p>
+          <h1>Our Granola</h1>
+          {/* <p>Sincere Energy in Nature</p> */}
         </section>
       </header>
       <div className="mainImg">
