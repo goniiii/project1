@@ -11,11 +11,13 @@ import Detail from "./components/detail.js";
 import Best from "./components/best.js";
 import MyPage from "./components/mypage.js";
 import New from "./components/new.js";
+import Scroll from "./components/scroll";
 
 function App() {
   let navigate = useNavigate();
   return (
     <div className="App">
+      <Scroll></Scroll>
       <div className="AppContent">
         <Navbar bg="light" expand="lg">
           <Container className="nav">

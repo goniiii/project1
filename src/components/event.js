@@ -28,7 +28,7 @@ function Event() {
               navigate("/products/new");
             }}
           >
-            이 주의 신상 할인받기 >{" "}
+            이 주의 신상 할인받기{" "}
           </Button>
           <hr />
           <p className="mb-0">이 기회는 5초후 사라집니다! </p>

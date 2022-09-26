@@ -1,23 +1,13 @@
-import Carousel from "react-bootstrap/Carousel";
-
 function DarkVariantExample() {
   return (
     <div className="gt" style={{ fontFamily: "initial" }}>
-      <img src="img/breakfast.jpg" style={{ margin: "0", width: "100%" }}></img>
-      <ul className="list">
-        <li>
-          <div className="gt_info">
-            {/* <h4>나와 내 가족이 먹고 싶은 상품을 판매합니다.</h4> */}
-            {/* <p>
-              "그린테이블은 사람의 몸에 이로운 상품이 우리의 삶까지 변화시킬 수
-              있다고 믿습니다. 내가 먹고 쓰는 것이 곧 '나'이니까요."
-            </p> */}
-          </div>
-        </li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <p className="brand_intro">Our Story</p>
+      <div>
+        <img className="brandImg1" src="img/oats.jpg"></img>
+      </div>
+      <div className="brandText1">
+        자연 재료의 고소한 풍미를 담은 그린테이블의 그래놀라는 특별합니다.
+      </div>
     </div>
     // <Carousel variant="dark">
     //   <Carousel.Item>

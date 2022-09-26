@@ -187,6 +187,25 @@ ul {
 .list {
   margin: 0;
 }
+
+.brand_intro {
+  margin: 50px;
+  text-align: left;
+}
+
+/* brand =================================================================*/
+.brand_intro {
+  font-size: 30px;
+  color: rgb(159, 176, 129, 0.8);
+}
+
+.brandImg1 {
+  float: left;
+}
+.brandText1 {
+  float: right;
+}
+
 /* experience ============================================================*/
 
 .insta_text {
@@ -214,6 +233,10 @@ ul {
 }
 .youtubeImg:hover {
   filter: brightness(0.6);
+}
+
+.player {
+  margin-left: 280px;
 }
 
 /*product ================================================================*/
