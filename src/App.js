@@ -10,6 +10,7 @@ import Info from "./components/info.js";
 import Detail from "./components/detail.js";
 import Best from "./components/best.js";
 import MyPage from "./components/mypage.js";
+import New from "./components/new.js";
 
 function App() {
   let navigate = useNavigate();
@@ -40,24 +41,27 @@ function App() {
 
                   <Nav.Link
                     onClick={() => {
-                      navigate("/experience");
+                      navigate("/expreience");
                     }}
                   >
                     Expereience
                   </Nav.Link>
-                  <Nav.Link
+                  {/* <Nav.Link
                     onClick={() => {
                       navigate("/location");
                     }}
                   >
                     Location
-                  </Nav.Link>
+                  </Nav.Link> */}
                   <NavDropdown title="Products" id="basic-nav-dropdown">
-                    <NavDropdown.Item
+                    {/* <NavDropdown.Item
                       onClick={() => {
                         navigate("/products/new");
                       }}
                     >
+                      New
+                    </NavDropdown.Item> */}
+                    <NavDropdown.Item href="/products/new">
                       New
                     </NavDropdown.Item>
                     <NavDropdown.Item
@@ -97,9 +101,10 @@ function App() {
           <Route path="/brandstory" element={<Brand></Brand>} />
           <Route path="/products" element={<Product></Product>}></Route>
           <Route path="/expreience" element={<Expereience></Expereience>} />
-          <Route path="/location" element={<Location></Location>} />
+          {/* <Route path="/location" element={<Location></Location>} /> */}
           <Route path="/products/pd001" element={<Detail></Detail>} />
           <Route path="/products/best" element={<Best></Best>} />
+          <Route path="/products/new" element={<New></New>} />
           <Route path="/mypage" element={<MyPage></MyPage>} />
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>

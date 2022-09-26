@@ -41,27 +41,27 @@ function Home() {
         {/* <h1 style={{ color: "darkgreen" }}>Experience</h1> */}
         <br />
         <br />
-        <h2>Expereience</h2>
+        <h1 className="main_text">Expereience</h1>
       </div>
 
       <div class="grid-image">
         <div class="lb-wrap">
           <div class="lb-text">
-            <h1 style={{ color: "white" }}>instagram</h1>
+            <span>instagram</span>
           </div>
           <div class="lb-image">
             <a href="https://www.instagram.com/our.granola/?utm_medium=copy_link">
-              <img width="500px" src="img/wheat.jpg" alt="" />
+              <img width="500px" src="img/cereal5.jpg" alt="" />
             </a>
           </div>
         </div>
         <div class="lb-wrap">
           <div class="lb-text">
-            <h1 style={{ color: "white" }}>YouTube</h1>
+            <span>YouTube</span>
           </div>
           <div class="lb-image">
             <a href="https://www.youtube.com/c/ORIONworld">
-              <img width="500px" src="img/wheat2.jpg" alt="" />
+              <img width="500px" src="img/berry.jpg" alt="" />
             </a>
           </div>
         </div>

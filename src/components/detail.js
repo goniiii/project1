@@ -1,13 +1,26 @@
 import { Tab, Tabs, Nav } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Navigate } from "react-router-dom";
 import Review from "./review";
+import Scroll from "../components/scroll";
 
 function Detail() {
   let [tabIndex, setTabIndex] = useState(0);
+  let [show, setShow] = useState(true);
+
+  useEffect(() => {
+    const sto = setTimeout(() => {
+      setShow(false);
+    }, 3000);
+
+    return () => {
+      clearTimeout(sto);
+    };
+  }, []);
 
   return (
     <div className="detail">
+      <Scroll></Scroll>
       {/* <p>pd001 상세페이지</p> */}
       <img className="detail_image" src="/img/cereal.jpg"></img>
       <div className="detail_info">
@@ -72,15 +85,24 @@ function Detail() {
 function Comp({ tabIndex }) {
   let [inputValue, setInputValue] = useState("");
   return (
-    <div>
+    <div style={{ width: "80%" }}>
       {
         [
           <div>
-            <p>상품정보</p>
+            <img
+              src="/img/detail.jpg"
+              style={{
+                alignItems: "center",
+                justifyContent: "center",
+                marginTop: "150px",
+              }}
+            ></img>
+            <br />
+            <img src="/img/detail2.jpg"></img>
           </div>,
           <div>
             <p>리뷰 페이지</p>
-            <p>베스트 리뷰</p>
+
             <Review></Review>
             <input
               className="qna"
@@ -90,11 +112,11 @@ function Comp({ tabIndex }) {
             <button style={{ margin: "20px" }}>작성하기</button>
           </div>,
           <div>
-            <p>문의페이지</p>
             <form>
               <input
                 className="qna"
                 type="text"
+                style={{ marginTop: "100px" }}
                 placeholder="문의를 남겨주세요."
                 onChange={(e) => {
                   console.log(e.target.value);
@@ -114,7 +136,7 @@ function Comp({ tabIndex }) {
             </form>
           </div>,
           <div>
-            <img src="/img/info.jpg"></img>
+            <img src="/img/info.jpg" style={{ marginTop: "100px" }}></img>
           </div>,
         ][tabIndex]
       }
