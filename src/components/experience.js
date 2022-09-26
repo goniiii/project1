@@ -1,7 +1,9 @@
 import Scroll from "./scroll";
 import ReactPlayer from "react-player";
+import { useNavigate } from "react-router-dom";
 
 function Expereience() {
+  let navigate = useNavigate();
   return (
     <div className="Experience">
       <Scroll></Scroll>
@@ -12,21 +14,27 @@ function Expereience() {
         <p> 그린테이블의 다양한 소식을 가장 빠르게 만나보세요.</p>
       </div>
       <div>
-        <img
-          className="instaImg"
-          src="/img/insta1.jpg"
-          style={{ marginTop: "21px", margin: "20px", marginLeft: "50px" }}
-        ></img>
-        <img
-          className="instaImg"
-          src="/img/insta2.jpg"
-          style={{ margin: "20px" }}
-        ></img>
-        <img
-          className="instaImg"
-          src="/img/insta3.jpg"
-          style={{ margin: "20px" }}
-        ></img>
+        <a href="https://www.instagram.com/our.granola/?utm_medium=copy_link">
+          <img
+            className="instaImg"
+            src="/img/insta1.jpg"
+            style={{ marginTop: "21px", margin: "20px", marginLeft: "50px" }}
+          ></img>
+        </a>
+        <a href="https://www.instagram.com/our.granola/?utm_medium=copy_link">
+          <img
+            className="instaImg"
+            src="/img/insta2.jpg"
+            style={{ margin: "20px" }}
+          ></img>
+        </a>
+        <a href="https://www.instagram.com/our.granola/?utm_medium=copy_link">
+          <img
+            className="instaImg"
+            src="/img/insta3.jpg"
+            style={{ margin: "20px" }}
+          ></img>
+        </a>
       </div>
 
       <div className="insta_text">

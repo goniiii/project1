@@ -53,7 +53,7 @@ function Product() {
     <div className="bg">
       <img className="bgImg" src="/img/grain.jpg" alt="bgImg"></img>
       <div className="bgtext">
-        <h1 style={{ color: "black" }}>Best Seller</h1>
+        <h1>Best Seller</h1>
       </div>
       <Container className="products">
         <div style={{ width: "100%", height: "150px" }}></div>

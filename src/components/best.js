@@ -154,9 +154,9 @@ function Best() {
   return (
     <div>
       <div className="bg">
-        <img className="bgImg" src="/img/grain.jpg" alt="bgImg"></img>
+        {/* <img className="bgImg" src="/img/wheat.jpg" alt="bgImg"></img> */}
         <div className="bgtext">
-          <h1 style={{ color: "black" }}>Best Seller</h1>
+          <h1 style={{ color: "rgb(159, 176, 129, 0.8);" }}>Best Seller</h1>
         </div>
         <Container className="products">
           <div style={{ width: "100%", height: "150px" }}></div>

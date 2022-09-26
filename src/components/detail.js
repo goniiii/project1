@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Navigate } from "react-router-dom";
 import Review from "./review";
 import Scroll from "../components/scroll";
+import Menu1 from "./menu1";
 
 function Detail() {
   let [tabIndex, setTabIndex] = useState(0);
@@ -22,10 +23,10 @@ function Detail() {
     <div className="detail">
       <Scroll></Scroll>
       {/* <p>pd001 상세페이지</p> */}
-      <img className="detail_image" src="/img/cereal.jpg"></img>
-      <div className="detail_info">
-        <span>상품 간략 소개 가격 등등등</span>
-      </div>
+      <h2 className="menu_name">그린테이블 시그니처 그래놀라</h2>
+      <Menu1></Menu1>
+      {/* <img className="detail_image" src="/img/cereal.jpg"></img> */}
+      {/* <div className="detail_info">상품 간략 소개 가격 등등등</div> */}
 
       <div className="tab">
         <Nav variant="tabs" defaultActiveKey="link1">
@@ -88,7 +89,7 @@ function Comp({ tabIndex }) {
     <div style={{ width: "80%" }}>
       {
         [
-          <div>
+          <div className="detail_photo">
             <img
               src="/img/detail.jpg"
               style={{

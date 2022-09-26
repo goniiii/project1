@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
 @import url("https://fonts.googleapis.com/css2? family= Noto+Sans+KR & display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +44,7 @@ html,
   height: 100%;
 }
 
-/* Main ================================================================*/
+/* home ================================================================*/
 
 /*border radius  모서리 둥글게  */
 
@@ -164,6 +164,12 @@ html,
   height: 300x;
 }
 
+@media only screen and(max-width:1000px) {
+  .jb-text {
+    width: 70%;
+  }
+}
+
 /*Brand ================================================================*/
 
 .Brand {
@@ -278,7 +284,7 @@ h1 {
 /*product ================================================================*/
 
 .products {
-  font-family: "Gamja Flower", cursive;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* background-image: url("../public/img/grain.jpg");
   position: fixed; */
 }
@@ -314,8 +320,15 @@ h1 {
   margin-bottom: 0px;
 }
 
-/* detail ======================================================= */
+.bgtext h1 {
+  color: rgba(144, 184, 150, 0.549);
+}
+/* detail_menu===================================================*/
 
+/* detail ======================================================= */
+.detail_photo {
+  margin-left: 200px;
+}
 .qna {
   width: 600px;
   height: 100px;
@@ -369,6 +382,9 @@ h1 {
 .detail_info {
   margin-top: 100px;
   margin-right: 200px;
+  float: right;
+  position: absolute;
+  margin-left: 500px;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -376,8 +392,27 @@ h1 {
 }
 .tab {
   margin: 100px;
-  width: 100%;
+  width: 80%;
   float: left;
+}
+
+.tab a {
+  font-size: 16px;
+}
+
+.menu_name {
+  color: rgba(144, 184, 150, 0.549);
+  font-family: "IBM Plex Sans KR", sans-serif;
+  margin: 100px;
+}
+
+/* menu1 ================================================================*/
+
+.Menu1_slider {
+  margin-top: 100px;
+  width: "100%";
+  margin-left: 400px;
+  margin-right: 400px;
 }
 
 /* Best =================================================================*/
@@ -405,4 +440,5 @@ h1 {
   /* position: fixed; */
   bottom: 0;
   position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

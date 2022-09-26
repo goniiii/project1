@@ -17,13 +17,15 @@ function Home() {
   return (
     <div className="home">
       <Scroll></Scroll>
-      <video width="100%" muted autoPlay loop>
-        <source src="video/forest.mp4" type="video/mp4"></source>
-      </video>
-      <div className="jb-text">
-        <h1>Green Table</h1>
-        <p>Sincere Energy in Nature</p>
-      </div>
+      <header className="header_home">
+        <video width="100%" muted autoPlay loop>
+          <source src="video/forest.mp4" type="video/mp4"></source>
+        </video>
+        <section className="jb-text">
+          <h1>Green Table</h1>
+          <p>Sincere Energy in Nature</p>
+        </section>
+      </header>
       <div className="mainImg">
         <img
           className="mainlogo"
