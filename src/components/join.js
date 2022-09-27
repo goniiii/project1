@@ -18,6 +18,7 @@ function Join() {
               <span>(영문소문자/숫자, 4~16자)</span>
             </td>
           </tr>
+
           <tr>
             <th scope="row">비밀번호*</th>
 

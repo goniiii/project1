@@ -10,25 +10,34 @@ function Expereience() {
 
       <div className="insta_text">
         <h1>Instagram</h1>
-        <p>@green_table </p>
+        <p>@our_granola</p>
         <p> 아워그래놀라의 다양한 소식을 가장 빠르게 만나보세요.</p>
       </div>
       <div>
-        <a href="https://www.instagram.com/our.granola/?utm_medium=copy_link">
+        <a
+          href="https://www.instagram.com/our.granola/?utm_medium=copy_link"
+          target="_blank"
+        >
           <img
             className="instaImg"
             src="/img/insta1.jpg"
             style={{ marginTop: "21px", margin: "20px", marginLeft: "50px" }}
           ></img>
         </a>
-        <a href="https://www.instagram.com/our.granola/?utm_medium=copy_link">
+        <a
+          href="https://www.instagram.com/our.granola/?utm_medium=copy_link"
+          target="_blank"
+        >
           <img
             className="instaImg"
             src="/img/insta2.jpg"
             style={{ margin: "20px" }}
           ></img>
         </a>
-        <a href="https://www.instagram.com/our.granola/?utm_medium=copy_link">
+        <a
+          href="https://www.instagram.com/our.granola/?utm_medium=copy_link"
+          target="_blank"
+        >
           <img
             className="instaImg"
             src="/img/insta3.jpg"

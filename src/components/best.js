@@ -107,52 +107,7 @@ import { useNavigate } from "react-router-dom";
 
 function Best() {
   let navigate = useNavigate();
-  let [cnt, setCnt] = useState(0);
 
-  let [products, setProducts] = useState([
-    {
-      id: "pd001",
-      itemName: "아워그래놀라 시그니처 ",
-      content:
-        "아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아헤매는 나는야 그래놀라 유목민 이라구요?",
-      imgPath: "/img/pd1.jpg",
-    },
-    {
-      id: "pd002",
-      itemName: " 저당 비건 수제 그래놀라",
-      content:
-        "아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아헤매는 나는야 그래놀라 유목민 이라구요?",
-      imgPath: "/img/pd1.jpg",
-    },
-    {
-      id: "pd003",
-      itemName: "아워그래놀라 카카오 수제 그래놀라",
-      content:
-        "아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아헤매는 나는야 그래놀라 유목민 이라구요?",
-      imgPath: "/img/pd2.jpg",
-    },
-    {
-      id: "pd004",
-      itemName: "아워그래놀라 그래놀라",
-      content:
-        "아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아헤매는 나는야 그래놀라 유목민 이라구요?",
-      imgPath: "/img/pd2.jpg",
-    },
-    {
-      id: "pd005",
-      itemName: "아워그래놀라 수제 뮤즐리",
-      content:
-        "아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아헤매는 나는야 그래놀라 유목민 이라구요?",
-      imgPath: "/img/pd3.jpg",
-    },
-    {
-      id: "pd006",
-      itemName: "아워그래놀라 수제 그래놀라",
-      content:
-        "아직도 그래놀라 유목민이세요? 매번 다른 수제 그래놀라를 찾아헤매는 나는야 그래놀라 유목민 이라구요?",
-      imgPath: "/img/pd3.jpg",
-    },
-  ]);
   return (
     <div>
       <div className="insta_text">
@@ -167,23 +122,27 @@ function Best() {
       <div className="pd_text">
         <img
           className="productImg"
-          style={{ width: "250px", cursor: "pointer", marginRight: "20px" }}
+          style={{ width: "300px", cursor: "pointer", marginRight: "20px" }}
           src="/img/pd1.jpg"
         ></img>
-        <span style={{ marginRight: "20px" }}>시그니처</span>
+
         <img
           className="productImg"
           style={{ width: "300px", cursor: "pointer", marginRight: "20px" }}
           src="/img/setpd.jpg"
         ></img>
-        <span>4종 세트</span>
+
         <img
           className="productImg"
-          style={{ width: "250px", cursor: "pointer", marginRight: "20px" }}
+          style={{ width: "300px", cursor: "pointer", marginRight: "20px" }}
           src="/img/pd4.jpg"
         ></img>
-        <span>레몬요기</span>
       </div>
+      {/* <div className="best_pdtext">
+        <span>시그니처</span>
+        <span>4종 세트</span>
+        <span>레몬요기</span>
+      </div> */}
       <div className="pd_text">
         <Button
           style={{ margin: "10px", marginTop: "80px", marginBottom: "50px" }}
@@ -197,99 +156,131 @@ function Best() {
         >
           Granola450g
         </Button>
-        <div className="ex">
-          <img
-            className="productImg"
-            style={{ width: "250px", cursor: "pointer" }}
-            src="/img/pd1.jpg"
-          ></img>
+        <div className="product_list">
+          <div className="ex">
+            <img
+              className="productImg"
+              style={{ width: "250px", cursor: "pointer" }}
+              src="/img/pd1.jpg"
+            ></img>
 
-          <img
-            className="productImg"
-            style={{ width: "250px", cursor: "pointer" }}
-            src="/img/pd1.jpg"
-          ></img>
-          <img
-            className="productImg"
-            style={{ width: "250px", cursor: "pointer" }}
-            src="/img/pd2.jpg"
-          ></img>
-          <img
-            className="productImg"
-            style={{ width: "250px", cursor: "pointer" }}
-            src="/img/pd2.jpg"
-          ></img>
-          <span>
-            시그니처220g
-            <br />
-            <span>15000원</span>
-          </span>
-          <span>
-            시그니처450g <br />
-            <span>20000원</span>
-          </span>
-          <span>
-            저당 그래놀라 220g <br />
-            <span>15000원</span>
-          </span>
-          <span>
-            저당 그래놀라 450g
-            <br />
-            <span>20000원</span>
-          </span>
+            <img
+              className="productImg"
+              style={{ width: "250px", cursor: "pointer" }}
+              src="/img/pd1.jpg"
+            ></img>
+            <img
+              className="productImg"
+              style={{ width: "250px", cursor: "pointer" }}
+              src="/img/pd3.jpg"
+            ></img>
+            <img
+              className="productImg"
+              style={{ width: "250px", cursor: "pointer" }}
+              src="/img/pd3.jpg"
+            ></img>
+            <span>
+              시그니처220g
+              <br />
+              <span className="price">15000원</span>
+              <br />
+              <span style={{ color: "red" }}>12500원</span>
+            </span>
+            <span>
+              시그니처450g <br />
+              <span>20000원</span>
+            </span>
+            <span>
+              저당 그래놀라 220g <br />
+              <span className="price">15000원</span>
+              <br />
+              <span style={{ color: "red" }}>12500원</span>
+            </span>
+            <span>
+              저당 그래놀라 450g
+              <br />
+              <span>20000원</span>
+            </span>
 
-          <img
-            className="productImg"
-            style={{ width: "250px", cursor: "pointer" }}
-            src="/img/pd3.jpg"
-          ></img>
-          <img
-            className="productImg"
-            style={{ width: "250px", cursor: "pointer" }}
-            src="/img/pd3.jpg"
-          ></img>
-          <img
-            className="productImg"
-            style={{ width: "250px", cursor: "pointer" }}
-            src="/img/pd4.jpg"
-          ></img>
-          <img
-            className="productImg"
-            style={{ width: "250px", cursor: "pointer" }}
-            src="/img/pd4.jpg"
-          ></img>
-          <span>
-            코코발로나 220g <br />
-            <span>15000원</span>
-          </span>
-          <span>
-            [판매예정] 코코발로나 450g <br />
-            <span>20000원</span>
-          </span>
+            <img
+              className="productImg"
+              style={{ width: "250px", cursor: "pointer" }}
+              src="/img/pd2.jpg"
+            ></img>
+            <img
+              className="productImg"
+              style={{ width: "250px", cursor: "pointer" }}
+              src="/img/pd2.jpg"
+            ></img>
+            <img
+              className="productImg"
+              style={{ width: "250px", cursor: "pointer" }}
+              src="/img/pd4.jpg"
+            ></img>
+            <img
+              className="productImg"
+              style={{ width: "250px", cursor: "pointer" }}
+              src="/img/pd4.jpg"
+            ></img>
+            <span>
+              코코발로나 220g <br />
+              <span className="price">15000원</span>
+              <br />
+              <span style={{ color: "red" }}>12500원</span>
+            </span>
+            <span>
+              [판매예정] 코코발로나 450g <br />
+              <span>20000원</span>
+            </span>
 
+            <span>
+              레몬요기 220g <br />
+              <span className="price">15000원</span>
+              <br />
+              <span style={{ color: "red" }}>12500원</span>
+            </span>
+            <span>
+              [판매예정] 레몬요기 450g <br />
+              <span>20000원</span>
+            </span>
+            <img
+              className="productImg"
+              style={{ width: "300px", cursor: "pointer" }}
+              src="/img/setpd.jpg"
+            ></img>
+            <img
+              className="productImg"
+              style={{ width: "300px", cursor: "pointer" }}
+            ></img>
+            <img
+              className="productImg"
+              style={{ width: "300px", cursor: "pointer" }}
+            ></img>
+            <img
+              className="productImg"
+              style={{ width: "300px", cursor: "pointer" }}
+            ></img>
+            <span>
+              레몬요기 220g <br />
+              <span className="price">15000원</span>
+              <br />
+              <span style={{ color: "red" }}>12500원</span>
+            </span>
+          </div>
+          {/* <img
+            className="productImg"
+            style={{ width: "300px", cursor: "pointer" }}
+            src="/img/setpd.jpg"
+          ></img> */}
+          {/* <br />
           <span>
-            레몬요기 220g <br />
-            <span>15000원</span>
-          </span>
-          <span>
-            [판매예정] 레몬요기 450g <br />
-            <span>20000원</span>
-          </span>
-        </div>
-        <img
-          className="productImg"
-          style={{ width: "300px", cursor: "pointer" }}
-          src="/img/setpd.jpg"
-        ></img>
-        <br />
-        <span>
-          세트 상품 4종 220g <br />
-          <span>50000원</span>
-        </span>
-        <div style={{ height: "100px" }}></div>
-        {/* <div className="bg"> */}
-        {/* <img className="bgImg" src="/img/wheat.jpg" alt="bgImg"></img> */}
-        {/* <div className="bgtext">
+            세트 상품 4종 220g <br />
+            <span>50000원</span>
+          </span> */}
+          <div style={{ height: "100px" }}></div>
+          {/* <div className="bg"> */}
+          {/* <img className="bgImg" src="/img/wheat.jpg" alt="bgImg"></img> */}
+          {/* <div className="bgtext">
           <h2>Products</h2>
         </div>
         <Container className="products">
@@ -315,9 +306,9 @@ function Best() {
                     <Card.Body>
                       <Card.Title>{products[i].itemName}</Card.Title> */}
 
-        {/* <Card.Text>{products[i].content}</Card.Text> */}
+          {/* <Card.Text>{products[i].content}</Card.Text> */}
 
-        {/* <Button
+          {/* <Button
                         variant="light"
                         onClick={() => {
                           navigate("/products/" + products[i].id);
@@ -326,7 +317,7 @@ function Best() {
                         주문하기
                       </Button> */}
 
-        {/* <Button
+          {/* <Button
                     variant="warning"
                     onClick={() => {
                       navigate("/product/" + products[i].id);
@@ -334,9 +325,9 @@ function Best() {
                   >
                     찜하기
                   </Button> */}
-        {/* </Card.Body>
+          {/* </Card.Body>
                     <Card.Body> */}
-        {/* <Card>
+          {/* <Card>
                         <span>리뷰</span>
                         <img
                           src="/img/heart.jpg"
@@ -350,15 +341,16 @@ function Best() {
                         ></img>
                         {setCnt}
                       </Card> */}
-        {/* </Card.Body>
+          {/* </Card.Body>
                   </Card> */}
-        {/* </Col>
+          {/* </Col>
               );
             })}
           </Row>
           <div style={{ width: "100%", height: "200px" }}></div>
         </Container> */}
-        {/* </div> */}
+          {/* </div> */}
+        </div>
       </div>
     </div>
   );
