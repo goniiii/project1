@@ -188,9 +188,12 @@ html,
 }
 
 @media only screen and(max-width:1000px) {
-  .jb-text {
-    width: 70%;
+  .home {
+    background-color: aqua;
   }
+}
+
+@media only screen and(max-width:700px) {
 }
 
 /*Brand ================================================================*/
@@ -334,8 +337,7 @@ h1 {
   z-index: 0;
 }
 
-.bg h1 {
-  font-size: 5rem;
+.bg h2 {
   color: rgba(139, 212, 150, 0.549);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: -50px;
@@ -344,8 +346,11 @@ h1 {
   margin-bottom: 0px;
 }
 
-.bgtext h1 {
-  color: rgba(144, 184, 150, 0.549);
+.bgtext h2 {
+  font-size: 30px;
+  color: rgb(159, 176, 129, 0.8);
+  font-family: "Nanum Myeongjo", serif;
+  margin-left: 120px;
 }
 /* detail_menu===================================================*/
 
@@ -451,6 +456,22 @@ h1 {
   opacity: 1;
 }
 
+.ex {
+  display: grid;
+  padding: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  /* grid-gap: 10px; */
+  /* color: rgb(159, 176, 129, 0.8); */
+  font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
+    "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
+}
+
+.pd_text {
+  font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
+    "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
+}
+
 /* New ==================================================================*/
 
 .new_event {
@@ -482,6 +503,7 @@ h1 {
   margin: 70px;
   margin-left: 300px;
   text-align: left;
+  color: gray;
 }
 .join_ {
   font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,

@@ -31,6 +31,7 @@ function App() {
                       navigate("/");
                     }}
                     style={{ fontSize: "2rem" }}
+                    className="nav_title"
                   >
                     Our Granola
                   </Nav.Link>
@@ -49,6 +50,13 @@ function App() {
                   >
                     Expereience
                   </Nav.Link>
+                  <Nav.Link
+                    onClick={() => {
+                      navigate("/products");
+                    }}
+                  >
+                    Products
+                  </Nav.Link>
                   {/* <Nav.Link
                     onClick={() => {
                       navigate("/location");
@@ -56,15 +64,15 @@ function App() {
                   >
                     Location
                   </Nav.Link> */}
-                  <NavDropdown title="Products" id="basic-nav-dropdown">
-                    {/* <NavDropdown.Item
+                  {/* <NavDropdown title="Products" id="basic-nav-dropdown"> */}
+                  {/* <NavDropdown.Item
                       onClick={() => {
                         navigate("/products/new");
                       }}
                     >
                       New
                     </NavDropdown.Item> */}
-                    <NavDropdown.Item href="/products/new">
+                  {/* <NavDropdown.Item href="/products/new">
                       New
                     </NavDropdown.Item>
                     <NavDropdown.Item
@@ -80,12 +88,12 @@ function App() {
                       }}
                     >
                       All
-                    </NavDropdown.Item>
-                    {/* <NavDropdown.Divider /> */}
-                    {/* <NavDropdown.Item href="#action/3.4">
+                    </NavDropdown.Item> */}
+                  {/* <NavDropdown.Divider /> */}
+                  {/* <NavDropdown.Item href="#action/3.4">
                       Separated link
                     </NavDropdown.Item> */}
-                  </NavDropdown>
+                  {/* </NavDropdown> */}
                   <Nav.Link
                     onClick={() => {
                       navigate("/mypage");
@@ -102,12 +110,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home></Home>} />
           <Route path="/brandstory" element={<Brand></Brand>} />
-          <Route path="/products" element={<Product></Product>}></Route>
+          <Route path="/products" element={<Best></Best>}></Route>
           <Route path="/expreience" element={<Expereience></Expereience>} />
           {/* <Route path="/location" element={<Location></Location>} /> */}
           <Route path="/products/pd001" element={<Detail></Detail>} />
-          <Route path="/products/best" element={<Best></Best>} />
-          <Route path="/products/new" element={<New></New>} />
+          {/* <Route path="/products/best" element={<Best></Best>} />
+          <Route path="/products/new" element={<New></New>} /> */}
           <Route path="/mypage" element={<MyPage></MyPage>} />
           <Route path="/join" element={<Join></Join>} />
           <Route path="*" element={<div>404 Not Found</div>} />
