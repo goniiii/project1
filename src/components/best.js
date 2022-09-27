@@ -204,7 +204,7 @@ function Best() {
                   </Button> */}
                     </Card.Body>
                     <Card.Body>
-                      <Card>
+                      {/* <Card>
                         <span>리뷰</span>
                         <img
                           src="/img/heart.jpg"
@@ -217,7 +217,7 @@ function Best() {
                           }}
                         ></img>
                         {setCnt}
-                      </Card>
+                      </Card> */}
                     </Card.Body>
                   </Card>
                 </Col>

@@ -1,6 +1,9 @@
 import { Form, Button } from "react-bootstrap";
+import { useNavigate, Route, Routes } from "react-router-dom";
+import Join from "../components/join";
 
 function MyPage() {
+  let navigate = useNavigate();
   return (
     <div
       style={{ width: "500px", margin: "100px auto", fontFamily: "initial" }}
@@ -22,7 +25,14 @@ function MyPage() {
         <Button variant="warning" type="submit">
           로그인
         </Button>
-        <Button variant="dark" type="submit" style={{ margin: "20px" }}>
+        <Button
+          variant="dark"
+          type="submit"
+          style={{ margin: "20px" }}
+          onClick={() => {
+            navigate("/join");
+          }}
+        >
           회원가입
         </Button>
       </Form>

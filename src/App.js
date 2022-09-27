@@ -12,6 +12,7 @@ import Best from "./components/best.js";
 import MyPage from "./components/mypage.js";
 import New from "./components/new.js";
 import Scroll from "./components/scroll";
+import Join from "./components/join";
 
 function App() {
   let navigate = useNavigate();
@@ -108,6 +109,7 @@ function App() {
           <Route path="/products/best" element={<Best></Best>} />
           <Route path="/products/new" element={<New></New>} />
           <Route path="/mypage" element={<MyPage></MyPage>} />
+          <Route path="/join" element={<Join></Join>} />
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
       </div>

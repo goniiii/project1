@@ -26,49 +26,23 @@ function Home() {
           {/* <p>Sincere Energy in Nature</p> */}
         </section>
       </header>
-      <div className="mainImg">
+      <img src="img/logo2.jpg"></img>
+      <div className="main_event">
+        <img style={{ cursor: "pointer" }} src="/img/free.jpg"></img>
+
         <img
-          className="mainlogo"
-          width="50%"
-          height="500px"
-          src="img/logo.jpg"
+          style={{ cursor: "pointer" }}
+          src="/img/sale.jpg"
           onClick={() => {
-            console.log("눌림");
-            navigate("/brandstory");
+            navigate("/join");
           }}
         ></img>
-        <img width="50%" height="500px" src="img/grain.jpg"></img>
+        <img style={{ cursor: "pointer" }} src="/img/event.jpg"></img>
       </div>
-      <div className="bottom">
-        {/* <h1 style={{ color: "darkgreen" }}>Experience</h1> */}
-        <br />
-        <br />
-        <h1 className="main_text">Expereience</h1>
-      </div>
-
-      <div class="grid-image">
-        <div class="lb-wrap">
-          <div class="lb-text">
-            <span>instagram</span>
-          </div>
-          <div class="lb-image">
-            <a href="https://www.instagram.com/our.granola/?utm_medium=copy_link">
-              <img width="500px" src="img/cereal5.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="lb-wrap">
-          <div class="lb-text">
-            <span>YouTube</span>
-          </div>
-          <div class="lb-image">
-            <a href="https://www.youtube.com/c/ORIONworld">
-              <img width="500px" src="img/berry.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-        {/* <img alt="" src="img/wheat.jpg" />
-        <img alt="" src="img/wheat2.jpg" /> */}
+      <div className="main_text">
+        <span>런칭기념 무료배송 이벤트</span>
+        <span>신규 회원 가입자 5% 할인 쿠폰 이벤트</span>
+        <span>런칭 이벤트</span>
       </div>
     </div>
   );
