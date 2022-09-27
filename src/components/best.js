@@ -154,65 +154,140 @@ function Best() {
     },
   ]);
   return (
-    <div className="pd_text">
-      <Button
-        style={{ margin: "10px", marginTop: "80px", marginBottom: "50px" }}
-        variant="light"
-      >
-        Granola220g
-      </Button>
-      <Button
-        style={{ margin: "10px", marginTop: "80px", marginBottom: "50px" }}
-        variant="light"
-      >
-        Granola450g
-      </Button>
-      <div className="ex">
-        <img
-          style={{ width: "250px", cursor: "pointer" }}
-          src="/img/pd1.jpg"
-        ></img>
-
-        <img
-          style={{ width: "250px", cursor: "pointer" }}
-          src="/img/pd1.jpg"
-        ></img>
-        <img
-          style={{ width: "250px", cursor: "pointer" }}
-          src="/img/pd2.jpg"
-        ></img>
-        <img
-          style={{ width: "250px", cursor: "pointer" }}
-          src="/img/pd2.jpg"
-        ></img>
-        <span>시그니처220g</span>
-        <span>시그니처450g</span>
-        <span>저당 그래놀라 220g</span>
-        <span>저당 그래놀라 450g</span>
-
-        <img
-          style={{ width: "250px", cursor: "pointer" }}
-          src="/img/pd3.jpg"
-        ></img>
-        <img
-          style={{ width: "250px", cursor: "pointer" }}
-          src="/img/pd3.jpg"
-        ></img>
-        <img
-          style={{ width: "250px", cursor: "pointer" }}
-          src="/img/pd4.jpg"
-        ></img>
-        <img
-          style={{ width: "250px", cursor: "pointer" }}
-          src="/img/pd4.jpg"
-        ></img>
-        <span>코코발로나 220g</span>
-        <span>[판매예정] 코코발로나 450g</span>
-
-        <span>레몬요기 220g</span>
-        <span>[판매예정] 레몬요기 450g</span>
+    <div>
+      <div className="insta_text">
+        <h1
+          style={{
+            marginTop: "100px",
+          }}
+        >
+          Best Items
+        </h1>
       </div>
-      <div className="bg">
+      <div className="pd_text">
+        <img
+          className="productImg"
+          style={{ width: "250px", cursor: "pointer", marginRight: "20px" }}
+          src="/img/pd1.jpg"
+        ></img>
+        <span style={{ marginRight: "20px" }}>시그니처</span>
+        <img
+          className="productImg"
+          style={{ width: "300px", cursor: "pointer", marginRight: "20px" }}
+          src="/img/setpd.jpg"
+        ></img>
+        <span>4종 세트</span>
+        <img
+          className="productImg"
+          style={{ width: "250px", cursor: "pointer", marginRight: "20px" }}
+          src="/img/pd4.jpg"
+        ></img>
+        <span>레몬요기</span>
+      </div>
+      <div className="pd_text">
+        <Button
+          style={{ margin: "10px", marginTop: "80px", marginBottom: "50px" }}
+          variant="light"
+        >
+          Granola220g
+        </Button>
+        <Button
+          style={{ margin: "10px", marginTop: "80px", marginBottom: "50px" }}
+          variant="light"
+        >
+          Granola450g
+        </Button>
+        <div className="ex">
+          <img
+            className="productImg"
+            style={{ width: "250px", cursor: "pointer" }}
+            src="/img/pd1.jpg"
+          ></img>
+
+          <img
+            className="productImg"
+            style={{ width: "250px", cursor: "pointer" }}
+            src="/img/pd1.jpg"
+          ></img>
+          <img
+            className="productImg"
+            style={{ width: "250px", cursor: "pointer" }}
+            src="/img/pd2.jpg"
+          ></img>
+          <img
+            className="productImg"
+            style={{ width: "250px", cursor: "pointer" }}
+            src="/img/pd2.jpg"
+          ></img>
+          <span>
+            시그니처220g
+            <br />
+            <span>15000원</span>
+          </span>
+          <span>
+            시그니처450g <br />
+            <span>20000원</span>
+          </span>
+          <span>
+            저당 그래놀라 220g <br />
+            <span>15000원</span>
+          </span>
+          <span>
+            저당 그래놀라 450g
+            <br />
+            <span>20000원</span>
+          </span>
+
+          <img
+            className="productImg"
+            style={{ width: "250px", cursor: "pointer" }}
+            src="/img/pd3.jpg"
+          ></img>
+          <img
+            className="productImg"
+            style={{ width: "250px", cursor: "pointer" }}
+            src="/img/pd3.jpg"
+          ></img>
+          <img
+            className="productImg"
+            style={{ width: "250px", cursor: "pointer" }}
+            src="/img/pd4.jpg"
+          ></img>
+          <img
+            className="productImg"
+            style={{ width: "250px", cursor: "pointer" }}
+            src="/img/pd4.jpg"
+          ></img>
+          <span>
+            코코발로나 220g <br />
+            <span>15000원</span>
+          </span>
+          <span>
+            [판매예정] 코코발로나 450g <br />
+            <span>20000원</span>
+          </span>
+
+          <span>
+            레몬요기 220g <br />
+            <span>15000원</span>
+          </span>
+          <span>
+            [판매예정] 레몬요기 450g <br />
+            <span>20000원</span>
+          </span>
+        </div>
+        <img
+          className="productImg"
+          style={{ width: "300px", cursor: "pointer" }}
+          src="/img/setpd.jpg"
+        ></img>
+        <br />
+        <span>
+          세트 상품 4종 220g <br />
+          <span>50000원</span>
+        </span>
+        <div style={{ height: "100px" }}></div>
+        {/* <div className="bg"> */}
         {/* <img className="bgImg" src="/img/wheat.jpg" alt="bgImg"></img> */}
         {/* <div className="bgtext">
           <h2>Products</h2>
@@ -283,6 +358,7 @@ function Best() {
           </Row>
           <div style={{ width: "100%", height: "200px" }}></div>
         </Container> */}
+        {/* </div> */}
       </div>
     </div>
   );

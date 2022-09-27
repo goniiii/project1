@@ -20,21 +20,27 @@ function App() {
     <div className="App">
       <Scroll></Scroll>
       <div className="AppContent">
+        {/* <Navbar> */}
         <Navbar bg="light" expand="lg">
+          {/* <Navbar bg="light" expand="lg"> */}
           <Container className="nav">
             <div>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav>
-                  <Nav.Link
-                    onClick={() => {
-                      navigate("/");
-                    }}
-                    style={{ fontSize: "2rem" }}
-                    className="nav_title"
-                  >
-                    Our Granola
-                  </Nav.Link>
+                  <div>
+                    <Nav.Link
+                      className="nav_title"
+                      onClick={() => {
+                        navigate("/");
+                      }}
+                      style={{
+                        fontSize: "2rem",
+                      }}
+                    >
+                      Our Granola
+                    </Nav.Link>
+                  </div>
                   <Nav.Link
                     onClick={() => {
                       navigate("/brandstory");

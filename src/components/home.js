@@ -21,14 +21,16 @@ function Home() {
         <video width="100%" muted autoPlay loop>
           <source src="/video/main_video.mp4" type="video/mp4"></source>
         </video>
-        <section className="jb-text">
-          <h1>Our Granola</h1>
-          {/* <p>Sincere Energy in Nature</p> */}
+        <section>
+          <div className="jb-text">
+            <h1>Our Granola</h1>
+            {/* <p>Sincere Energy in Nature</p> */}
+          </div>
         </section>
       </header>
       <img src="img/logo2.jpg"></img>
       <div className="main_event">
-        <img style={{ cursor: "pointer" }} src="/img/free.jpg"></img>
+        <img src="/img/free.jpg"></img>
 
         <img
           style={{ cursor: "pointer" }}
@@ -37,7 +39,13 @@ function Home() {
             navigate("/join");
           }}
         ></img>
-        <img style={{ cursor: "pointer" }} src="/img/event.jpg"></img>
+        <img
+          onClick={() => {
+            navigate("/products");
+          }}
+          style={{ cursor: "pointer" }}
+          src="/img/event.jpg"
+        ></img>
       </div>
       <div className="main_text">
         <span>런칭기념 무료배송 이벤트</span>

@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2? family= Noto+Sans+KR & display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +68,10 @@ html,
   height: 35px;
   z-index: 1;
 }
-
+.nav .nav_title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: darkolivegreen;
+}
 .nav a {
   position: relative;
   overflow: hidden;
@@ -81,8 +85,8 @@ html,
   text-align: center;
   font-size: 1.2em;
   /* font-weight: bold; */
-  background: #fdfbfb;
-  color: rgb(124, 105, 66);
+  /* background: #fdfbfb; */
+  color: rgb(159, 176, 129, 0.8);
   text-decoration: none;
   margin: auto;
 
@@ -107,8 +111,8 @@ html,
   transform: translateX(0);
 }
 .nav a:focus {
-  color: rgb(255, 255, 255);
-  background-color: rgb(172, 142, 74);
+  color: rgb(124, 105, 66);
+  /* background-color: rgb(172, 142, 74); */
   /* border-radius: 100%; */
   background-size: 30px;
 }
@@ -471,7 +475,12 @@ h1 {
   font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
     "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
 }
-
+.productImg {
+  transition: all 0.2s linear;
+}
+.productImg:hover {
+  transform: scale(1.05);
+}
 /* New ==================================================================*/
 
 .new_event {
@@ -486,7 +495,7 @@ h1 {
   padding: 40px;
   width: 100%;
   height: 250px;
-  background-color: rgb(155, 139, 107);
+  background-color: rgb(159, 176, 129, 0.8);
   color: rgb(255, 255, 255);
   /* position: fixed; */
   bottom: 0;
@@ -514,4 +523,42 @@ h1 {
 td {
   padding: 30px;
   border-bottom: 1px solid rgb(198, 189, 189);
+}
+
+@media screen and (max-width: 1202px) {
+  .App {
+    width: auto;
+  }
+  .main_text span {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1045px) {
+  .App {
+    width: auto;
+  }
+  .jb-text h1 {
+    font-size: 150px;
+  }
+  /* .main_event img {
+    align-self: auto;
+  } */
+}
+
+@media screen and (max-width: 873px) {
+  .App {
+    width: auto;
+  }
+  .jb-text h1 {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 597px) {
+  .App {
+    width: auto;
+  }
+  .jb-text h1 {
+    font-size: 0px;
+  }
 }
