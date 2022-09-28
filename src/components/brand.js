@@ -4,7 +4,10 @@ function Brand() {
       <p className="brand_intro">Our Story</p>
       <div className="gt" style={{ fontFamily: "initial" }}>
         <div>
-          <img className="brandImg1" src="img/oats.jpg"></img>
+          <img
+            className="brandImg1"
+            src={process.env.PUBLIC_URL + "/img/oats.jpg"}
+          ></img>
         </div>
         <div className="brandText1">
           <h3>Value 01</h3>
@@ -25,10 +28,16 @@ function Brand() {
           정도를 세심하게 관리했어요.
         </div>
         <div>
-          <img className="brandImg2" src="img/wheat2.jpg"></img>
+          <img
+            className="brandImg2"
+            src={process.env.PUBLIC_URL + "/img/wheat2.jpg"}
+          ></img>
         </div>
         <div>
-          <img className="brandImg1" src="img/grain.jpg"></img>
+          <img
+            className="brandImg1"
+            src={process.env.PUBLIC_URL + "/img/grain.jpg"}
+          ></img>
         </div>
         <div className="brandText1">
           <h3>Value 03</h3>
@@ -45,7 +54,10 @@ function Brand() {
           했답니다. 그래놀라의 다양한 영양과 맛을 취향대로 준비했어요.
         </div>
         <div>
-          <img className="brandImg2" src="img/muesli2.jpg"></img>
+          <img
+            className="brandImg2"
+            src={process.env.PUBLIC_URL + "/img/muesli2.jpg"}
+          ></img>
         </div>
       </div>
     </div>

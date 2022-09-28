@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/project1">
       <App />
     </BrowserRouter>
   </React.StrictMode>

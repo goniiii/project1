@@ -18,7 +18,7 @@ function Expereience() {
         >
           <img
             className="instaImg"
-            src="/img/insta1.jpg"
+            src={process.env.PUBLIC_URL + "/img/insta1.jpg"}
             // style={{ marginTop: "21px", margin: "20px", marginLeft: "50px" }}
           ></img>
         </a>
@@ -28,7 +28,7 @@ function Expereience() {
         >
           <img
             className="instaImg"
-            src="/img/insta2.jpg"
+            src={process.env.PUBLIC_URL + "/img/insta2.jpg"}
             // style={{ margin: "20px" }}
           ></img>
         </a>
@@ -38,7 +38,7 @@ function Expereience() {
         >
           <img
             className="instaImg"
-            src="/img/insta3.jpg"
+            src={process.env.PUBLIC_URL + "/img/insta3.jpg"}
             // style={{ margin: "20px" }}
           ></img>
         </a>

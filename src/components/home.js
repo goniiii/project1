@@ -22,7 +22,10 @@ function Home() {
 
       <header className="header_home">
         <video width="100%" muted autoPlay loop>
-          <source src="/video/main_video.mp4" type="video/mp4"></source>
+          <source
+            src={process.env.PUBLIC_URL + "/video/main_video.mp4"}
+            type="video/mp4"
+          ></source>
         </video>
         <section>
           <div className="videoText">
@@ -53,11 +56,11 @@ function Home() {
       {/* 이벤트========================================================= */}
 
       <div className="main_event">
-        <img src="/img/free.jpg"></img>
+        <img src={process.env.PUBLIC_URL + "/img/free.jpg"}></img>
 
         <img
           style={{ cursor: "pointer" }}
-          src="/img/sale.jpg"
+          src={process.env.PUBLIC_URL + "/img/sale.jpg"}
           onClick={() => {
             navigate("/join");
           }}
@@ -67,7 +70,7 @@ function Home() {
             navigate("/products");
           }}
           style={{ cursor: "pointer" }}
-          src="/img/event.jpg"
+          src={process.env.PUBLIC_URL + "/img/event.jpg"}
         ></img>
       </div>
       {/* 이벤트소개글 ===========================================================*/}

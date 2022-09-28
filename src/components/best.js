@@ -21,19 +21,20 @@ function Best() {
         <img
           className="productImg"
           style={{ width: "300px", cursor: "pointer", marginRight: "20px" }}
-          src="/img/pd1.jpg"
+          // src={process.env.PUBLIC_URL + "/img/pd1.jpg"}
+          src="./img/pd1.jpg"
         ></img>
 
         <img
           className="productImg"
           style={{ width: "300px", cursor: "pointer", marginRight: "20px" }}
-          src="/img/setpd.jpg"
+          src={process.env.PUBLIC_URL + "/img/setpd.jpg"}
         ></img>
 
         <img
           className="productImg"
           style={{ width: "300px", cursor: "pointer", marginRight: "20px" }}
-          src="/img/pd4.jpg"
+          src={process.env.PUBLIC_URL + "/img/pd4.jpg"}
         ></img>
       </div>
       {/* <div className="best_pdtext">
@@ -59,7 +60,7 @@ function Best() {
             <li>
               <div className="items">
                 <div>
-                  <img src="/img/pd1.jpg"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/pd1.jpg"}></img>
                 </div>
                 <div>
                   <li className="itemTitle">시그니처 220g</li>
@@ -76,7 +77,7 @@ function Best() {
             <li>
               <div className="items">
                 <div>
-                  <img src="/img/pd1.jpg"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/pd1.jpg"}></img>
                 </div>
                 <div>
                   <li className="itemTitle">시그니처 450g</li>
@@ -93,7 +94,7 @@ function Best() {
             <li>
               <div className="items">
                 <div>
-                  <img src="/img/pd3.jpg"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/pd3.jpg"}></img>
                 </div>
                 <div>
                   <li className="itemTitle">저당그래놀라 220g</li>
@@ -110,7 +111,7 @@ function Best() {
             <li className="items">
               <div>
                 <div>
-                  <img src="/img/pd3.jpg"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/pd3.jpg"}></img>
                 </div>
                 <div>
                   <li className="itemTitle">저당그래놀라 450g</li>
@@ -127,7 +128,7 @@ function Best() {
             <li className="items">
               <div>
                 <div>
-                  <img src="/img/pd2.jpg"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/pd2.jpg"}></img>
                 </div>
                 <div>
                   <li className="itemTitle">코코발로나 220g</li>
@@ -144,7 +145,7 @@ function Best() {
             <li className="items">
               <div>
                 <div>
-                  <img src="/img/pd2.jpg"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/pd2.jpg"}></img>
                 </div>
                 <div>
                   <li className="itemTitle">코코발로나 450g</li>
@@ -164,7 +165,7 @@ function Best() {
             <li className="items">
               <div>
                 <div>
-                  <img src="/img/pd4.jpg"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/pd4.jpg"}></img>
                 </div>
                 <div>
                   <li className="itemTitle">레몬요기 220g</li>
@@ -181,7 +182,7 @@ function Best() {
             <li className="items">
               <div>
                 <div>
-                  <img src="/img/pd4.jpg"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/pd4.jpg"}></img>
                 </div>
                 <div>
                   <li className="itemTitle">레몬요기 450g</li>
@@ -198,7 +199,7 @@ function Best() {
             <li className="items">
               <div>
                 <div>
-                  <img src="/img/setpd.jpg"></img>
+                  <img src={process.env.PUBLIC_URL + "/img/setpd.jpg"}></img>
                 </div>
                 <div>
                   <li className="itemTitle">세트 상품 4종 220g</li>
