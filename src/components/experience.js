@@ -13,7 +13,7 @@ function Expereience() {
         <p>@our_granola</p>
         <p> 아워그래놀라의 다양한 소식을 가장 빠르게 만나보세요.</p>
       </div>
-      <div>
+      <div className="instaLinkImg">
         <a
           href="https://www.instagram.com/our.granola/?utm_medium=copy_link"
           target="_blank"
@@ -21,7 +21,7 @@ function Expereience() {
           <img
             className="instaImg"
             src="/img/insta1.jpg"
-            style={{ marginTop: "21px", margin: "20px", marginLeft: "50px" }}
+            // style={{ marginTop: "21px", margin: "20px", marginLeft: "50px" }}
           ></img>
         </a>
         <a
@@ -31,7 +31,7 @@ function Expereience() {
           <img
             className="instaImg"
             src="/img/insta2.jpg"
-            style={{ margin: "20px" }}
+            // style={{ margin: "20px" }}
           ></img>
         </a>
         <a
@@ -41,7 +41,7 @@ function Expereience() {
           <img
             className="instaImg"
             src="/img/insta3.jpg"
-            style={{ margin: "20px" }}
+            // style={{ margin: "20px" }}
           ></img>
         </a>
       </div>

@@ -28,29 +28,45 @@ function Home() {
           </div>
         </section>
       </header>
-      <ul>
-        <li>
-          <p>우리가 더 맛있게</p>
-        </li>
-        <li>
-          <p>더 건강하게</p>
-        </li>
-        <li>
-          <p>더 믿을 수 있게</p>
-        </li>
-        <li>
+      <div className="main_brand_info">
+        <p>WHY OUR GRANOLA?</p>
+        <p className="brandInfoText">우리가 더 맛있게</p>
+        <p className="brandInfoText">더 건강하게</p>
+        <p className="brandInfoText">더 믿을 수 있게</p>
+        <div className="brandDetailInfo">
           <p>
             셰프의 경험과 연구를 통해 고소함, 바삭함, 새콤달콤한 맛의 밸런스를
             최상으로 이끌어 낸 프리미엄 그래놀라입니다.
           </p>
-        </li>
-        <li>
           <p>
             전문 셰프가 품질 좋은 원재료만 철저하게 위생을 관리해 매일
             생산합니다.
           </p>
-        </li>
-      </ul>
+        </div>
+        {/* <ul>
+          <li>
+            <p>우리가 더 맛있게</p>
+          </li>
+          <li>
+            <p>더 건강하게</p>
+          </li>
+          <li>
+            <p>더 믿을 수 있게</p>
+          </li>
+          <li>
+            <p>
+              셰프의 경험과 연구를 통해 고소함, 바삭함, 새콤달콤한 맛의 밸런스를
+              최상으로 이끌어 낸 프리미엄 그래놀라입니다.
+            </p>
+          </li>
+          <li>
+            <p>
+              전문 셰프가 품질 좋은 원재료만 철저하게 위생을 관리해 매일
+              생산합니다.
+            </p>
+          </li>
+        </ul> */}
+      </div>
       <div className="main_event">
         <img src="/img/free.jpg"></img>
 

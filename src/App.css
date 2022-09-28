@@ -162,7 +162,25 @@ html,
   opacity: 0.7;
   font-style: oblique;
 }
+.main_brand_info {
+  font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
+    "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
+  margin: 60px;
+  margin-bottom: 150px;
+}
+.main_brand_info p {
+  font-weight: bold;
+}
 
+.brandInfoText {
+  font-size: 40px;
+  font-family: "Nanum Myeongjo", serif;
+}
+.brandDetailInfo {
+  font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
+    "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
+  color: gray;
+}
 .bottom {
   margin: 40px;
   text-align: center;
@@ -292,10 +310,18 @@ h1 {
   color: rgb(159, 176, 129, 0.8);
 }
 .instaImg {
-  vertical-align: middle;
+  /* vertical-align: middle; */
   transition: all 0.5s linear;
   cursor: pointer;
-  z-index: 0;
+  /* z-index: 0; */
+  width: auto;
+}
+
+.instaLinkImg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-gap: 10px; */
+  align-content: space-between;
 }
 
 .instaImg:hover {
@@ -316,6 +342,18 @@ h1 {
 .player {
   /* margin-left: 280px; */
   margin: 50px auto;
+}
+
+@media screen and (max-width: 1029px) {
+  .App {
+    width: auto;
+  }
+  .instaLinkImg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-content: space-between;
+  }
 }
 
 /*product ================================================================*/
@@ -551,6 +589,20 @@ ul {
 }
 .itemPrice {
   font-weight: bold;
+}
+
+@media screen and (max-width: 940px) {
+  .App {
+    width: auto;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .items img {
+    width: 60%;
+  }
 }
 
 /* New ==================================================================*/
