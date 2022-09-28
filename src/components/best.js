@@ -59,7 +59,11 @@ function Best() {
           <ul className="dList">
             <li>
               <div className="items">
-                <div>
+                <div
+                  onClick={() => {
+                    navigate("/itemDetail");
+                  }}
+                >
                   <img src={process.env.PUBLIC_URL + "/img/pd1.jpg"}></img>
                 </div>
                 <div>

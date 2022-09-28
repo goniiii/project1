@@ -9,6 +9,8 @@ import Best from "./components/best.js";
 import MyPage from "./components/mypage.js";
 import Join from "./components/join";
 import NotFound from "./components/404";
+import ItemDetail from "./components/itemDetail";
+
 // import Detail from "./components/detail.js";
 // import Product from "./components/product.js";
 // import Location from "./components/location.js";
@@ -95,6 +97,7 @@ function App() {
           <Route path="/mypage" element={<MyPage></MyPage>} />
           <Route path="/join" element={<Join></Join>} />
           <Route path="*" element={<NotFound></NotFound>} />
+          <Route path="/itemDetail" element={<ItemDetail />}></Route>
           {/* <Route path="/location" element={<Location></Location>} /> */}
           {/* <Route path="/products/pd001" element={<Detail></Detail>} /> */}
           {/* <Route path="/products/best" element={<Best></Best>} />

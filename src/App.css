@@ -222,6 +222,15 @@ html,
 .brandImg1 {
   /* float: left; */
   width: 500px;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .brandText1 {
@@ -234,6 +243,15 @@ html,
 .brandImg2 {
   /* float: right; */
   width: 500px;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .brandText2 {
@@ -270,6 +288,17 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   /* grid-gap: 10px; */
   align-content: space-between;
+  width: 65%;
+  margin: 0 auto;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .instaImg:hover {
@@ -284,14 +313,14 @@ h1 {
 
 /* experience 페이지 미디어쿼리 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-@media screen and (max-width: 1029px) {
+@media screen and (max-width: 1643px) {
   .App {
     width: auto;
   }
   .instaLinkImg {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
     align-content: space-between;
   }
 }
@@ -336,6 +365,15 @@ ul {
 }
 .productImg {
   transition: all 0.2s linear;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .productImg:hover {
   transform: scale(1.05);
@@ -360,10 +398,20 @@ ul {
 ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 40px;
 }
+
 .items img {
-  width: 100%;
+  width: 90%;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .items {
   cursor: pointer;
@@ -400,6 +448,66 @@ ul {
   .items img {
     width: 60%;
   }
+}
+
+/* ItemDetail =========================================================*/
+
+.detailArea {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.detailArea .BigImg img {
+  max-width: 602px;
+  border: 1px solid #ececec;
+  margin-top: 150px;
+  margin-left: 300px;
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.summary ul {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.summary ul li span {
+  font-size: 14px;
+  float: left;
+  color: rgb(97, 95, 95);
+}
+
+.infoArea .summary .productPrice span {
+  font-weight: bold;
+  color: #222;
+  font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
+    "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
+}
+
+.infoArea {
+  width: 37%;
+  position: relative;
+  max-width: 570px;
+  min-width: 460px;
+  float: right;
+  padding: 0 0 15px 10px;
+}
+
+.productTitle {
+  margin: 0 0 22px 0;
+  margin-top: 150px;
+  font-weight: bold;
+  padding: 50px 0 0;
+  font-size: 21px;
+  border-top: 2px solid #222;
+  font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
+    "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
 }
 
 /* New ==================================================================*/
