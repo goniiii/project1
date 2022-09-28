@@ -22,7 +22,7 @@ function MyPage() {
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           {/* <Form.Check type="checkbox" label="Check me out" /> */}
         </Form.Group>
-        <Button variant="warning" type="submit">
+        <Button variant="success" type="submit">
           로그인
         </Button>
         <Button
