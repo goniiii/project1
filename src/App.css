@@ -475,7 +475,7 @@ h1 {
   display: grid;
   padding: 5px;
   /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-columns: 200px 200px 200px 200px;
   grid-auto-rows: minmax(150px, auto);
   grid-row-gap: 10px;
   grid-column-gap: 200px;
@@ -484,6 +484,7 @@ h1 {
   font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
     "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
 }
+
 .price {
   text-decoration: line-through;
   color: gray;
@@ -509,6 +510,49 @@ h1 {
   color: rgb(71, 100, 71);
   font-size: 18px;
 }
+
+/*D =====================================================================*/
+
+/* .dList {
+  text-align: center;
+}
+
+.itemList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+} */
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.items img {
+  width: 100%;
+}
+.items {
+  cursor: pointer;
+}
+.items li {
+  margin-bottom: 10px;
+}
+
+.itemTitle {
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid lightgray;
+}
+.itemInfo {
+  color: rgb(180, 177, 177);
+}
+.itemPrice span {
+  text-decoration: line-through;
+  color: rgb(180, 177, 177);
+}
+.itemPrice {
+  font-weight: bold;
+}
+
 /* New ==================================================================*/
 
 .new_event {

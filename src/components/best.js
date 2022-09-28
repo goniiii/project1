@@ -156,7 +156,164 @@ function Best() {
         >
           Granola450g
         </Button>
-        <div className="product_list">
+        <div className="itemList">
+          <ul className="dList">
+            <li>
+              <div className="items">
+                <div>
+                  <img src="/img/pd1.jpg"></img>
+                </div>
+                <div>
+                  <li className="itemTitle">시그니처 220g</li>
+                  <li className="itemInfo">
+                    풍부한 견과류와 새콤달콤한 크랜베리가 들어간
+                    아워그래놀라만의 늑별한 레서피로 만든 시그니처
+                  </li>
+                  <li className="itemPrice">
+                    <span>15,000원</span>12,500원
+                  </li>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="items">
+                <div>
+                  <img src="/img/pd1.jpg"></img>
+                </div>
+                <div>
+                  <li className="itemTitle">시그니처 450g</li>
+                  <li className="itemInfo">
+                    풍부한 견과류와 새콤달콤한 크랜베리가 들어간
+                    아워그래놀라만의 늑별한 레서피로 만든 시그니처
+                  </li>
+                  <li className="itemPrice">
+                    <span>30,000원</span>24,500원
+                  </li>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="items">
+                <div>
+                  <img src="/img/pd3.jpg"></img>
+                </div>
+                <div>
+                  <li className="itemTitle">저당그래놀라 220g</li>
+                  <li className="itemInfo">
+                    당도를 줄인 시그니처 건과일을 빼고 고소한 견과류 함량을
+                    높였어요
+                  </li>
+                  <li className="itemPrice">
+                    <span>15000원</span>12,500원
+                  </li>
+                </div>
+              </div>
+            </li>
+            <li className="items">
+              <div>
+                <div>
+                  <img src="/img/pd3.jpg"></img>
+                </div>
+                <div>
+                  <li className="itemTitle">저당그래놀라 450g</li>
+                  <li className="itemInfo">
+                    당도를 줄인 시그니처 건과일을 빼고 고소한 견과류 함량을
+                    높였어요
+                  </li>
+                  <li className="itemPrice">
+                    <span>30,000원</span>24,500원
+                  </li>
+                </div>
+              </div>
+            </li>
+            <li className="items">
+              <div>
+                <div>
+                  <img src="/img/pd2.jpg"></img>
+                </div>
+                <div>
+                  <li className="itemTitle">코코발로나 220g</li>
+                  <li className="itemInfo">
+                    프랑스산 최고급 발로나 코코아 파우더로 만든 프리미엄 카카오
+                    그래놀라
+                  </li>
+                  <li className="itemPrice">
+                    <span>16,000원</span>13,500원
+                  </li>
+                </div>
+              </div>
+            </li>
+            <li className="items">
+              <div>
+                <div>
+                  <img src="/img/pd2.jpg"></img>
+                </div>
+                <div>
+                  <li className="itemTitle">코코발로나 450g</li>
+                  <li className="itemInfo">
+                    프랑스산 최고급 발로나 코코아 파우더로 만든 프리미엄 카카오
+                    그래놀라
+                  </li>
+                  <li className="itemPrice">
+                    <span>30,000원</span>26,000원
+                  </li>
+                  <li>
+                    <div></div>
+                  </li>
+                </div>
+              </div>
+            </li>
+            <li className="items">
+              <div>
+                <div>
+                  <img src="/img/pd4.jpg"></img>
+                </div>
+                <div>
+                  <li className="itemTitle">레몬요기 220g</li>
+                  <li className="itemInfo">
+                    상큼한 레몬과 요거트, 산뜻한 딸기가 만난 아워그래놀라만의
+                    특별한 그래놀라
+                  </li>
+                  <li className="itemPrice">
+                    <span>16000원</span>13,500원
+                  </li>
+                </div>
+              </div>
+            </li>
+            <li className="items">
+              <div>
+                <div>
+                  <img src="/img/pd4.jpg"></img>
+                </div>
+                <div>
+                  <li className="itemTitle">레몬요기 450g</li>
+                  <li className="itemInfo">
+                    상큼한 레몬과 요거트, 산뜻한 딸기가 만난 아워그래놀라만의
+                    특별한 그래놀라
+                  </li>
+                  <li className="itemPrice">
+                    <span>30,000원</span>26,000원
+                  </li>
+                </div>
+              </div>
+            </li>
+            <li className="items">
+              <div>
+                <div>
+                  <img src="/img/setpd.jpg"></img>
+                </div>
+                <div>
+                  <li className="itemTitle">세트 상품 4종 220g</li>
+                  <li className="itemInfo">
+                    아워 그래놀라의 220g 4가지 맛을 한번에! 더 할인 된 가격!
+                  </li>
+                  <li className="itemPrice">50,000원</li>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        {/* <div className="product_list">
           <div className="ex">
             <img
               className="productImg"
@@ -266,24 +423,24 @@ function Best() {
               <br />
               <span style={{ color: "red" }}>12500원</span>
             </span>
-          </div>
-          {/* <img
+          </div> */}
+        {/* <img
             className="productImg"
             style={{ width: "300px", cursor: "pointer" }}
             src="/img/setpd.jpg"
           ></img> */}
-          {/* <br />
+        {/* <br />
           <span>
             세트 상품 4종 220g <br />
             <span>50000원</span>
           </span> */}
-          <div style={{ height: "100px" }}></div>
-          {/* <div className="bg"> */}
-          {/* <img className="bgImg" src="/img/wheat.jpg" alt="bgImg"></img> */}
-          {/* <div className="bgtext">
+        {/* <div style={{ height: "100px" }}></div> */}
+        {/* <div className="bg"> */}
+        {/* <img className="bgImg" src="/img/wheat.jpg" alt="bgImg"></img> */}
+        {/* <div className="bgtext">
           <h2>Products</h2>
-        </div>
-        <Container className="products">
+           </div>
+         <Container className="products">
           <div style={{ width: "100%", height: "150px" }}></div>
 
           <Row sm={1} md={3}>
@@ -306,9 +463,9 @@ function Best() {
                     <Card.Body>
                       <Card.Title>{products[i].itemName}</Card.Title> */}
 
-          {/* <Card.Text>{products[i].content}</Card.Text> */}
+        {/* <Card.Text>{products[i].content}</Card.Text> */}
 
-          {/* <Button
+        {/* <Button
                         variant="light"
                         onClick={() => {
                           navigate("/products/" + products[i].id);
@@ -317,7 +474,7 @@ function Best() {
                         주문하기
                       </Button> */}
 
-          {/* <Button
+        {/* <Button
                     variant="warning"
                     onClick={() => {
                       navigate("/product/" + products[i].id);
@@ -325,9 +482,9 @@ function Best() {
                   >
                     찜하기
                   </Button> */}
-          {/* </Card.Body>
+        {/* </Card.Body>
                     <Card.Body> */}
-          {/* <Card>
+        {/* <Card>
                         <span>리뷰</span>
                         <img
                           src="/img/heart.jpg"
@@ -341,16 +498,16 @@ function Best() {
                         ></img>
                         {setCnt}
                       </Card> */}
-          {/* </Card.Body>
+        {/* </Card.Body>
                   </Card> */}
-          {/* </Col>
+        {/* </Col>
               );
             })}
           </Row>
           <div style={{ width: "100%", height: "200px" }}></div>
-        </Container> */}
-          {/* </div> */}
-        </div>
+          </Container> */}
+        {/* </div> */}
+        {/* </div> */}
       </div>
     </div>
   );

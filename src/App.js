@@ -13,6 +13,7 @@ import MyPage from "./components/mypage.js";
 import New from "./components/new.js";
 import Scroll from "./components/scroll";
 import Join from "./components/join";
+import D from "./components/d";
 
 function App() {
   let navigate = useNavigate();
@@ -63,43 +64,7 @@ function App() {
                   >
                     Products
                   </Nav.Link>
-                  {/* <Nav.Link
-                    onClick={() => {
-                      navigate("/location");
-                    }}
-                  >
-                    Location
-                  </Nav.Link> */}
-                  {/* <NavDropdown title="Products" id="basic-nav-dropdown"> */}
-                  {/* <NavDropdown.Item
-                      onClick={() => {
-                        navigate("/products/new");
-                      }}
-                    >
-                      New
-                    </NavDropdown.Item> */}
-                  {/* <NavDropdown.Item href="/products/new">
-                      New
-                    </NavDropdown.Item>
-                    <NavDropdown.Item
-                      onClick={() => {
-                        navigate("/products/best");
-                      }}
-                    >
-                      Best
-                    </NavDropdown.Item>
-                    <NavDropdown.Item
-                      onClick={() => {
-                        navigate("/products/all");
-                      }}
-                    >
-                      All
-                    </NavDropdown.Item> */}
-                  {/* <NavDropdown.Divider /> */}
-                  {/* <NavDropdown.Item href="#action/3.4">
-                      Separated link
-                    </NavDropdown.Item> */}
-                  {/* </NavDropdown> */}
+
                   <Nav.Link
                     onClick={() => {
                       navigate("/mypage");
@@ -107,6 +72,14 @@ function App() {
                   >
                     My page
                   </Nav.Link>
+
+                  {/* <Nav.Link
+                    onClick={() => {
+                      navigate("/d");
+                    }}
+                  >
+                    d
+                  </Nav.Link> */}
                 </Nav>
               </Navbar.Collapse>
             </div>
@@ -124,6 +97,7 @@ function App() {
           <Route path="/products/new" element={<New></New>} /> */}
           <Route path="/mypage" element={<MyPage></MyPage>} />
           <Route path="/join" element={<Join></Join>} />
+          <Route path="/d" element={<D></D>} />
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
       </div>
