@@ -5,38 +5,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.grid-image {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin: 30px 0;
-}
-.grid-image img {
-  width: calc(50% - 10px);
-  margin: 0 15px 15px 0;
-}
-.grid-image img:nth-of-type(2n),
-.grid-image img:last-child {
-  margin-right: 0;
-}
-@media screen and (max-width: 640px) {
-  .grid-image img {
-    width: calc(50% - 15px);
-  }
-}
-@media screen and (max-width: 480px) {
-  .grid-image img:nth-of-type(2n) {
-    margin-right: 0;
-  }
-  .grid-image img:nth-of-type(2n) {
-    margin-right: 15px;
-  }
 }
 
 body,
@@ -45,37 +18,38 @@ html,
   height: 100%;
 }
 
-/* home ================================================================*/
-
-/*border radius  모서리 둥글게  */
+/* App ============================================================== */
 
 .App {
   text-align: center;
-  font-family: "Single Day", cursive;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
+
 .AppContent {
   flex: 1;
 }
 
-.nav container {
-  margin: 0;
-  width: 100%;
-}
+/* 네비게이션바  */
+
 .nav {
   height: 35px;
   z-index: 1;
 }
+
+/* 네비게이션바의 브랜드명 */
+
 .nav .nav_title {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: darkolivegreen;
 }
+
+/* 네비게이션바  */
+
 .nav a {
   position: relative;
   overflow: hidden;
-  transition: background 0.3s ease;
   font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
     "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
   display: block;
@@ -84,32 +58,15 @@ html,
   line-height: 50px;
   text-align: center;
   font-size: 1.2em;
-  /* font-weight: bold; */
-  /* background: #fdfbfb; */
   color: rgb(159, 176, 129, 0.8);
   text-decoration: none;
   margin: auto;
-
   padding: 5px;
   padding-top: 0;
 }
 
-.nav a::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  bottom: 0;
-  left: 0;
-  transform: translateX(-100%);
-  transition: all 0.3s ease;
-}
+/* 네비게이션바 선택되면 색상변경 */
 
-.nav a:hover::after {
-  transform: translateX(0);
-}
 .nav a:focus {
   color: rgb(124, 105, 66);
   /* background-color: rgb(172, 142, 74); */
@@ -117,57 +74,41 @@ html,
   background-size: 30px;
 }
 
-/* .navbar {
-  font-family: "Noto Sans KR", sans-serif;
+/* Home ================================================================*/
 
-  position: sticky;
-
-  top: 0;
-  z-index: 1;
-} */
-.mainImg {
-  opacity: 1;
-  transform: translateZ(0);
-  transition: 1s;
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition-duration: 1.5s;
-  transition-property: opacity, transform;
-}
-.mainlogo {
-  cursor: pointer;
-}
-.main_text {
+/* 홈화면 이벤트 카드 설명 */
+/* .main_text {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(159, 176, 129, 0.8);
-}
+} */
 
-.jb-text {
+/* 홈화면 영상에 글씨 삽입 */
+
+.videoText {
   position: absolute;
   top: 50%;
   width: 100%;
 }
-.jb-text h1 {
+
+/* 홈화면 영상 글씨 위치 조절 */
+
+.videoText h1 {
   margin-top: -200px;
   text-align: center;
   font-size: 200px;
   color: #ffffff;
   opacity: 0.7;
-  /* font-style: oblique; */
 }
-.jb-text p {
-  margin-top: -20px;
-  text-align: center;
-  font-size: 38px;
-  color: #ffffff;
-  opacity: 0.7;
-  font-style: oblique;
-}
+
+/* 홈화면 브랜드 소개글 */
+
 .main_brand_info {
   font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
     "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
   margin: 60px;
   margin-bottom: 150px;
 }
+
 .main_brand_info p {
   font-weight: bold;
 }
@@ -176,16 +117,21 @@ html,
   font-size: 40px;
   font-family: "Nanum Myeongjo", serif;
 }
+
 .brandDetailInfo {
   font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
     "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
   color: gray;
 }
-.bottom {
-  margin: 40px;
-  text-align: center;
-  height: 300x;
-}
+
+/* 브랜드 소개글 애니메이션  */
+
+/* .main_brand_info p {
+  transition-property: opacity(0.6);
+  transition-duration: 3s;
+} */
+
+/* 홈화면 이벤트 카드 */
 
 .main_event {
   display: grid;
@@ -199,7 +145,9 @@ html,
   margin-bottom: 100px;
 }
 
-.main_text {
+/* 이벤트 설명글 */
+
+/* .main_text {
   display: grid;
   padding: 10px;
   grid-template-columns: repeat(3, 1fr);
@@ -210,16 +158,14 @@ html,
   font-weight: bold;
   font-family: "Nanum Myeongjo", serif;
 }
+
 .main_text span {
   display: grid;
   grid-template-columns: 350px;
   align-content: space-between;
-}
-
-/* .main_brand_info p {
-  transition-property: opacity(0.6);
-  transition-duration: 3s;
 } */
+
+/* 홈화면 반응형>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media screen and (max-width: 1029px) {
   .App {
@@ -229,6 +175,7 @@ html,
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    grid-row-gap: 50px;
     align-content: space-between;
   }
 }
@@ -242,33 +189,22 @@ html,
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     align-content: space-between;
+    grid-row-gap: 50px;
   }
 }
 
 /*Brand ================================================================*/
 
-.Brand {
-  text-align: center;
-  background-color: white;
-  padding: 50px;
-}
-ul {
-  list-style-type: none;
-}
 .gt {
   margin: 0 auto;
   width: 1050px;
-}
-.gt_info {
-  display: table-cell;
-  width: 670px;
-  padding-left: 50px;
-  font-size: 20px;
-  vertical-align: middle;
-}
-
-.list {
-  margin: 0;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 10px;
+  color: rgb(159, 176, 129, 0.8);
+  font-family: "Nanum Myeongjo", serif;
 }
 
 .brand_intro {
@@ -276,7 +212,6 @@ ul {
   font-weight: 400;
 }
 
-/* brand =================================================================*/
 .brand_intro {
   font-size: 30px;
   color: rgb(159, 176, 129, 0.8);
@@ -288,38 +223,33 @@ ul {
   /* float: left; */
   width: 500px;
 }
+
 .brandText1 {
   /* float: right; */
   width: 400px;
   margin: 20px;
   height: 400px;
 }
+
 .brandImg2 {
   /* float: right; */
   width: 500px;
 }
+
 .brandText2 {
   /* float: left; */
   width: 400px;
   margin: 20px;
   height: 400px;
 }
+
 .brandText2 h3,
 h1 {
   font-family: "Nanum Myeongjo", serif;
 }
+
 .brandText1 h3,
 h1 {
-  font-family: "Nanum Myeongjo", serif;
-}
-
-.gt {
-  display: grid;
-  padding: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(150px, auto);
-  grid-gap: 10px;
-  color: rgb(159, 176, 129, 0.8);
   font-family: "Nanum Myeongjo", serif;
 }
 
@@ -331,11 +261,8 @@ h1 {
   color: rgb(159, 176, 129, 0.8);
 }
 .instaImg {
-  /* vertical-align: middle; */
   transition: all 0.5s linear;
   cursor: pointer;
-  /* z-index: 0; */
-  width: auto;
 }
 
 .instaLinkImg {
@@ -350,20 +277,12 @@ h1 {
   filter: blur(0.5);
 }
 
-.youtubeImg {
-  vertical-align: middle;
-  transition: all 0.5s linear;
-  cursor: pointer;
-  z-index: 0;
-}
-.youtubeImg:hover {
-  filter: brightness(0.6);
-}
-
 .player {
   /* margin-left: 280px; */
   margin: 50px auto;
 }
+
+/* experience 페이지 미디어쿼리 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media screen and (max-width: 1029px) {
   .App {
@@ -377,149 +296,11 @@ h1 {
   }
 }
 
-/*product ================================================================*/
-
-.products {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* background-image: url("../public/img/grain.jpg");
-  position: fixed; */
-}
-.bg {
-  /* position: fixed; */
-  margin: 0;
-  padding: 0;
-  align-items: left;
-  z-index: 0;
-
-  width: 100%;
-  text-align: center;
-}
-.bgImg {
-  position: fixed;
-  opacity: 0.6;
-  left: 0;
-  top: 0;
-  /* margin-top: 40px; */
-  /* margin-top: 150px; */
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.bg h2 {
-  color: rgba(139, 212, 150, 0.549);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: -50px;
-  z-index: 1;
-  margin: 100px;
-  margin-bottom: 0px;
-}
-
-.bgtext h2 {
-  font-size: 30px;
-  color: rgb(159, 176, 129, 0.8);
-  font-family: "Nanum Myeongjo", serif;
-  margin-left: 120px;
-}
-/* detail_menu===================================================*/
-
-/* detail ======================================================= */
-.detail_photo {
-  margin-left: 200px;
-}
-.qna {
-  width: 600px;
-  height: 100px;
-}
-.lb-wrap {
-  width: 50%;
-  margin: 10px auto;
-  /* border: 1px solid #000000; */
-  position: relative;
-}
-.lb-wrap img {
-  width: 100%;
-  vertical-align: middle;
-  transition: all 0.5s linear;
-  cursor: pointer;
-  z-index: 0;
-}
-.lb-wrap img:hover {
-  /* transform: scale(1.1); */
-
-  filter: brightness(0.5);
-  filter: blur(0.5);
-}
-.lb-text {
-  padding: 10px 20px;
-  /* background-color: #ffeebc; */
-  text-align: center;
-  position: absolute;
-  z-index: 1;
-  color: white;
-  opacity: 0.8;
-  font-size: 100px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.detail {
-  font-family: "Noto Sans KR", sans-serif;
-}
-.detail_image {
-  float: left;
-  clear: both;
-  margin-left: 200px;
-
-  /* margin-top: 100px; */
-  width: 400px;
-  height: 300px;
-}
-.detail_info {
-  margin-top: 100px;
-  margin-right: 200px;
-  float: right;
-  position: absolute;
-  margin-left: 500px;
-}
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}
-.tab {
-  margin: 100px;
-  width: 80%;
-  float: left;
-}
-
-.tab a {
-  font-size: 16px;
-}
-
-.menu_name {
-  color: rgba(144, 184, 150, 0.549);
-  font-family: "IBM Plex Sans KR", sans-serif;
-  margin: 100px;
-}
-.menu_price {
-  color: rgba(144, 184, 150, 0.549);
-  font-family: "IBM Plex Sans KR", sans-serif;
-  margin-top: 0;
-}
-
-/* menu1 ================================================================*/
-
-.Menu1_slider {
-  margin-top: 100px;
-  width: 800px;
-  margin-left: 400px;
-  margin-right: 400px;
-}
-
 /* Best =================================================================*/
 
+ul {
+  list-style-type: none;
+}
 .product_list {
   display: flex;
   justify-content: center;
@@ -575,17 +356,6 @@ h1 {
   color: rgb(71, 100, 71);
   font-size: 18px;
 }
-
-/*D =====================================================================*/
-
-/* .dList {
-  text-align: center;
-}
-
-.itemList {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-} */
 
 ul {
   display: grid;
@@ -693,7 +463,7 @@ td {
   .App {
     width: auto;
   }
-  .jb-text h1 {
+  .videoText h1 {
     font-size: 150px;
   }
   /* .main_event img {
@@ -705,7 +475,7 @@ td {
   .App {
     width: auto;
   }
-  .jb-text h1 {
+  .videoText h1 {
     font-size: 100px;
   }
 }
@@ -714,7 +484,140 @@ td {
   .App {
     width: auto;
   }
-  .jb-text h1 {
+  .videoText h1 {
     font-size: 0px;
   }
 }
+
+/*product ================================================================*/
+
+/* .products {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-image: url("../public/img/grain.jpg");
+  position: fixed; */
+/* } */
+/* .bg {  */
+/* position: fixed; */
+/* margin: 0;
+  padding: 0;
+  align-items: left;
+  z-index: 0;
+
+  width: 100%;
+  text-align: center;
+} */
+/* .bgImg {
+  position: fixed;
+  opacity: 0.6;
+  left: 0;
+  top: 0; */
+/* margin-top: 40px; */
+/* margin-top: 150px; */
+/* width: 100%;
+  height: 100%;
+  z-index: 0;
+} */
+
+/* .bg h2 {
+  color: rgba(139, 212, 150, 0.549);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: -50px;
+  z-index: 1;
+  margin: 100px;
+  margin-bottom: 0px;
+}
+
+.bgtext h2 {
+  font-size: 30px;
+  color: rgb(159, 176, 129, 0.8);
+  font-family: "Nanum Myeongjo", serif;
+  margin-left: 120px;
+} */
+
+/* detail_menu===================================================*/
+
+/* detail ======================================================= */
+/* .detail_photo {
+  margin-left: 200px;
+}
+.qna {
+  width: 600px;
+  height: 100px;
+}
+.lb-wrap {
+  width: 50%;
+  margin: 10px auto; */
+/* border: 1px solid #000000; */
+/* position: relative;
+}
+.lb-wrap img {
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  z-index: 0;
+}
+.lb-wrap img:hover { */
+/* transform: scale(1.1); */
+
+/* filter: brightness(0.5);
+  filter: blur(0.5);
+}
+.lb-text {
+  padding: 10px 20px; */
+/* background-color: #ffeebc; */
+/* text-align: center;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  opacity: 0.8;
+  font-size: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.detail {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.detail_image {
+  float: left;
+  clear: both;
+  margin-left: 200px; */
+
+/* margin-top: 100px; */
+/* width: 400px;
+  height: 300px;
+}
+.detail_info {
+  margin-top: 100px;
+  margin-right: 200px;
+  float: right;
+  position: absolute;
+  margin-left: 500px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.tab {
+  margin: 100px;
+  width: 80%;
+  float: left;
+}
+
+.tab a {
+  font-size: 16px;
+}
+
+.menu_name {
+  color: rgba(144, 184, 150, 0.549);
+  font-family: "IBM Plex Sans KR", sans-serif;
+  margin: 100px;
+}
+.menu_price {
+  color: rgba(144, 184, 150, 0.549);
+  font-family: "IBM Plex Sans KR", sans-serif;
+  margin-top: 0;
+} */

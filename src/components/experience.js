@@ -6,8 +6,6 @@ function Expereience() {
   let navigate = useNavigate();
   return (
     <div className="Experience">
-      <Scroll></Scroll>
-
       <div className="insta_text">
         <h1>Instagram</h1>
         <p>@our_granola</p>
@@ -52,11 +50,9 @@ function Expereience() {
         <p> 아워그래놀라의 브랜드영상을 만나보세요.</p>
       </div>
       <div>
-        {/* <img
-          src="/img/youtube.jpg"
-          style={{ margin: "50px" }}
-          className="youtubeImg"
-        ></img> */}
+        {}
+        {/* react playter 설치한걸로 비디오 삽입 */}
+
         <ReactPlayer
           className="player"
           url={"https://www.youtube.com/watch?v=YSevkPcwb3M"}
