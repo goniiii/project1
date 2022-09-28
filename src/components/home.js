@@ -85,11 +85,11 @@ function Home() {
           src="/img/event.jpg"
         ></img>
       </div>
-      <div className="main_text">
+      {/* <div className="main_text">
         <span>런칭기념 무료배송 이벤트</span>
         <span>신규 회원 가입자 5% 할인 쿠폰 이벤트</span>
         <span>런칭 이벤트</span>
-      </div>
+      </div> */}
     </div>
   );
 }

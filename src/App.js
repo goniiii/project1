@@ -19,7 +19,7 @@ function App() {
   let navigate = useNavigate();
   return (
     <div className="App">
-      <Scroll></Scroll>
+      {/* <Scroll></Scroll> */}
       <div className="AppContent">
         {/* <Navbar> */}
         <Navbar bg="light" expand="lg">
