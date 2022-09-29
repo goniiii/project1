@@ -46,12 +46,18 @@ function Best() {
         <Button
           style={{ margin: "10px", marginTop: "80px", marginBottom: "50px" }}
           variant="light"
+          onClick={() => {
+            navigate("/220g");
+          }}
         >
           Granola220g
         </Button>
         <Button
           style={{ margin: "10px", marginTop: "80px", marginBottom: "50px" }}
           variant="light"
+          onClick={() => {
+            navigate("/450g");
+          }}
         >
           Granola450g
         </Button>

@@ -11,6 +11,10 @@ import Join from "./components/join";
 import NotFound from "./components/404";
 import ItemDetail from "./components/itemDetail";
 import SNS from "./components/snsIcon";
+import Regular from "./components/220g";
+import { useState } from "react";
+import LoginForm from "./components/LoginForm";
+import { isCompositeComponent } from "react-dom/test-utils";
 
 // import Detail from "./components/detail.js";
 // import Product from "./components/product.js";
@@ -130,6 +134,8 @@ function App() {
           <Route path="/mypage" element={<MyPage></MyPage>} />
           <Route path="/join" element={<Join></Join>} />
           <Route path="*" element={<NotFound></NotFound>} />
+          <Route path="/220g" element={<Regular />}></Route>
+          <Route path="/450g" element={<ItemDetail />}></Route>
           <Route path="/itemDetail" element={<ItemDetail />}></Route>
           {/* <Route path="/location" element={<Location></Location>} /> */}
           {/* <Route path="/products/pd001" element={<Detail></Detail>} /> */}
