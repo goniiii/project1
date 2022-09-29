@@ -1,6 +1,8 @@
-import { Button } from "react-bootstrap";
+import { Nav, Button, Tab, Tabs, Sonnet } from "react-bootstrap";
+import { useState } from "react";
 
 function ItemDetail() {
+  let [tabIndex, setTabIndex] = useState(0);
   return (
     <div>
       <div className="detailArea">
@@ -44,12 +46,12 @@ function ItemDetail() {
           </div>
           <div className="totalProducts">
             <tr>
-              <td>시그니처 220g</td>
+              {/* <td>시그니처 220g</td>
               <td>
                 <span>
                   <input type="text" style={{ width: "30px" }}></input>
                 </span>
-              </td>
+              </td> */}
               <td>
                 <span>
                   <input type="hidden"></input>
@@ -94,6 +96,152 @@ function ItemDetail() {
           </div>
         </div>
       </div>
+      <div className="detail">
+        {/* <p>pd001 상세페이지</p> */}
+
+        {/* <h3 className="menu_price">11000원</h3> */}
+
+        {/* <img className="detail_image" src="/img/cereal.jpg"></img> */}
+        {/* <div className="detail_info">상품 간략 소개 가격 등등등</div> */}
+
+        <div className="tab">
+          <Nav variant="tabs" defaultActiveKey="link1">
+            <Nav.Item>
+              <Nav.Link
+                style={{ color: "gray" }}
+                eventKey="link1"
+                onClick={() => {
+                  setTabIndex(0);
+                }}
+              >
+                상품정보
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                style={{ color: "gray" }}
+                eventKey="link2"
+                onClick={() => {
+                  setTabIndex(1);
+                }}
+              >
+                구매정보
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                style={{ color: "gray" }}
+                eventKey="link3"
+                onClick={() => {
+                  setTabIndex(2);
+                }}
+              >
+                상품리뷰
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                style={{ color: "gray" }}
+                eventKey="link4"
+                onClick={() => {
+                  setTabIndex(3);
+                }}
+              >
+                상품문의
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+          {/* <Comp /> */}
+
+          <Comp tabIndex={tabIndex} />
+        </div>
+      </div>
+      {/* <div className="tabs">
+        <Tabs
+          defaultActiveKey="profile"
+          id="fill-tab-example"
+          className="mb-3"
+          fill
+        >
+          <Tab eventKey="home" title="상품정보"></Tab>
+          <Tab eventKey="profile" title="구매정보"></Tab>
+          <Tab eventKey="longer-tab" title="상품후기"></Tab>
+          <Tab eventKey="contact" title="상품문의"></Tab>
+        </Tabs>
+      </div> */}
+    </div>
+  );
+}
+
+function Comp({ tabIndex }) {
+  let [inputValue, setInputValue] = useState("");
+  return (
+    <div>
+      {
+        [
+          <div className="detail_photo">
+            <img
+              src="./img/detail.jpg"
+              style={{
+                alignItems: "center",
+                justifyContent: "center",
+                marginTop: "150px",
+              }}
+            ></img>
+            <br />
+            <img src="./img/detail2.jpg"></img>
+          </div>,
+          <div className="reviewBoard">
+            <div>
+              <h2>REVIEW</h2>
+            </div>
+            <div className="productReview">
+              <div>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </div>
+            </div>
+            {/* <input
+              className="qna"
+              type="text"
+              placeholder="리뷰를 남겨주세요."
+            ></input> */}
+            {/* <button style={{ margin: "20px" }}>작성하기</button> */}
+          </div>,
+          <div>
+            <form>
+              <input
+                className="qna"
+                type="text"
+                style={{ marginTop: "100px" }}
+                placeholder="문의를 남겨주세요."
+                onChange={(e) => {
+                  console.log(e.target.value);
+                  setInputValue(e.target.value);
+                }}
+              ></input>
+              <button
+                style={{ margin: "20px" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  console.log(inputValue);
+                }}
+              >
+                작성하기
+              </button>
+              <p>{inputValue}</p>
+            </form>
+          </div>,
+          <div>
+            <img src="/img/info.jpg" style={{ marginTop: "100px" }}></img>
+          </div>,
+        ][tabIndex]
+      }
     </div>
   );
 }

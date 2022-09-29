@@ -10,6 +10,7 @@ import MyPage from "./components/mypage.js";
 import Join from "./components/join";
 import NotFound from "./components/404";
 import ItemDetail from "./components/itemDetail";
+import SNS from "./components/snsIcon";
 
 // import Detail from "./components/detail.js";
 // import Product from "./components/product.js";
@@ -22,17 +23,49 @@ function App() {
   let navigate = useNavigate();
   return (
     <div className="App">
+      {/* <SNS></SNS> */}
       {/* <Scroll></Scroll> */}
       <div className="AppContent">
         {/* <Navbar> */}
+
+        <div className="topMenu">
+          <ul>
+            <li>
+              <a href="/project1/mypage">LOGIN</a>
+            </li>
+            <li>
+              {" "}
+              <a href="/project1/join">JOIN</a>
+            </li>
+            <li>
+              {" "}
+              <a href="/project1/mypage">ORDER</a>
+            </li>
+            <li>
+              {" "}
+              <a href="/project1/mypage">MY PAGE</a>
+            </li>
+          </ul>
+        </div>
+        <div className="inner_first">
+          <div className="logo">
+            <img
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                navigate("/");
+              }}
+              src={process.env.PUBLIC_URL + "/img/logo.png"}
+            ></img>
+          </div>
+        </div>
         <Navbar bg="light" expand="lg">
           {/* <Navbar bg="light" expand="lg"> */}
           <Container className="nav">
-            <div>
+            <div className="nav_menu_text">
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav>
-                  <div>
+                  {/* <div>
                     <Nav.Link
                       className="nav_title"
                       onClick={() => {
@@ -44,7 +77,7 @@ function App() {
                     >
                       Our Granola
                     </Nav.Link>
-                  </div>
+                  </div> */}
                   <Nav.Link
                     onClick={() => {
                       navigate("/brandstory");

@@ -20,6 +20,20 @@ html,
 
 /* App ============================================================== */
 
+.sns {
+  position: fixed;
+}
+
+.sns img {
+  width: 30px;
+  margin-left: 1200px;
+  margin-top: 600px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 30%;
+  /* z-index: 1; */
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -29,6 +43,28 @@ html,
 
 .AppContent {
   flex: 1;
+}
+.logo {
+  margin: 30px 100px 30px 350px;
+  display: block;
+}
+.topMenu ul {
+  float: right;
+  /* margin:  */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.topMenu a {
+  color: gray;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.topMenu {
+  margin-top: 10px;
+  margin-right: 20px;
 }
 
 /* 네비게이션바  */
@@ -47,6 +83,10 @@ html,
 
 /* 네비게이션바  */
 
+.nav_menu_text {
+  margin: 0 auto;
+}
+
 .nav a {
   position: relative;
   overflow: hidden;
@@ -58,7 +98,7 @@ html,
   line-height: 50px;
   text-align: center;
   font-size: 1.2em;
-  color: rgb(159, 176, 129, 0.8);
+  color: rgb(36, 57, 47);
   text-decoration: none;
   margin: auto;
   padding: 5px;
@@ -68,7 +108,7 @@ html,
 /* 네비게이션바 선택되면 색상변경 */
 
 .nav a:focus {
-  color: rgb(124, 105, 66);
+  color: rgb(140, 162, 150);
   /* background-color: rgb(172, 142, 74); */
   /* border-radius: 100%; */
   background-size: 30px;
@@ -107,6 +147,15 @@ html,
     "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
   margin: 60px;
   margin-bottom: 150px;
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .main_brand_info p {
@@ -288,7 +337,7 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   /* grid-gap: 10px; */
   align-content: space-between;
-  width: 65%;
+  width: 80%;
   margin: 0 auto;
   animation: fadein 3s;
 }
@@ -395,7 +444,7 @@ ul {
   font-size: 18px;
 }
 
-ul {
+.itemList ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
@@ -440,7 +489,7 @@ ul {
   .App {
     width: auto;
   }
-  ul {
+  .itemList ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -461,7 +510,7 @@ ul {
   max-width: 602px;
   border: 1px solid #ececec;
   margin-top: 150px;
-  margin-left: 300px;
+  /* margin-left: 300px; */
   animation: fadein 2s;
 }
 @keyframes fadein {
@@ -508,6 +557,12 @@ ul {
   border-top: 2px solid #222;
   font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
     "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
+}
+
+.tab {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 /* New ==================================================================*/
