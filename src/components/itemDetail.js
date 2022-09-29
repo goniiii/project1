@@ -29,19 +29,41 @@ function ItemDetail() {
               </li>
               <li className="productPrice">
                 <span className="title">
-                  <span>소비자가</span>
-                </span>
-                <span className="title">
-                  <span>15,000원</span>
+                  <span style={{ marginRight: "10px", marginTop: "10px" }}>
+                    소비자가
+                  </span>
+                  <span style={{ marginTop: "10px" }}>15,000원</span>
                 </span>
               </li>
               <li className="productPrice">
-                <span>판매가</span>
+                <span style={{ marginTop: "13px", marginRight: "10px" }}>
+                  판매가
+                </span>
                 <span style={{ fontSize: "30px", marginLeft: "10px" }}>
                   12,500원
                 </span>
               </li>
-              <li></li>
+              <li>
+                <span style={{ marginTop: "30px" }}>구매수량</span>
+                <sapn>
+                  <input
+                    className="quantity"
+                    type="text"
+                    value="1"
+                    style={{ marginLeft: "100px", marginTop: "30px" }}
+                  ></input>
+                </sapn>
+                <Button
+                  variant="light"
+                  style={{ width: "30px" }}
+                  onClick={() => {}}
+                >
+                  up
+                </Button>
+                <Button variant="light" style={{ width: "30px" }}>
+                  down
+                </Button>
+              </li>
             </ul>
           </div>
           <div className="totalProducts">
@@ -114,7 +136,9 @@ function ItemDetail() {
                   setTabIndex(0);
                 }}
               >
-                상품정보
+                <span style={{ fontSize: "15px", marginBottom: "5px" }}>
+                  상품정보
+                </span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -125,7 +149,9 @@ function ItemDetail() {
                   setTabIndex(1);
                 }}
               >
-                구매정보
+                <span style={{ fontSize: "15px", marginBottom: "5px" }}>
+                  구매정보
+                </span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -136,7 +162,9 @@ function ItemDetail() {
                   setTabIndex(2);
                 }}
               >
-                상품리뷰
+                <span style={{ fontSize: "15px", marginBottom: "5px" }}>
+                  상품리뷰
+                </span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -147,7 +175,9 @@ function ItemDetail() {
                   setTabIndex(3);
                 }}
               >
-                상품문의
+                <span style={{ fontSize: "15px", marginBottom: "5px" }}>
+                  상품문의
+                </span>
               </Nav.Link>
             </Nav.Item>
           </Nav>
@@ -181,15 +211,15 @@ function Comp({ tabIndex }) {
         [
           <div className="detail_photo">
             <img
-              src="./img/detail.jpg"
+              src="./img/detailInfo.jpg"
               style={{
                 alignItems: "center",
                 justifyContent: "center",
                 marginTop: "150px",
               }}
             ></img>
-            <br />
-            <img src="./img/detail2.jpg"></img>
+
+            <img src="./img/detailInfo2.jpg"></img>
           </div>,
           <div className="reviewBoard">
             <div>

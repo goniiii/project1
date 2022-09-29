@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 import { useState } from "react";
 function Join() {
-  let [inputValue, setInputValue] = "";
+  let [inputValue, setInputValue] = useState("");
 
   return (
     <div className="join_">
