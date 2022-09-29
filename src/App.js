@@ -31,19 +31,19 @@ function App() {
         <div className="topMenu">
           <ul>
             <li>
-              <a href="/project1/mypage">LOGIN</a>
+              <a href={process.env.PUBLIC_URL + "/mypage"}>LOGIN</a>
             </li>
             <li>
               {" "}
-              <a href="/project1/join">JOIN</a>
+              <a href={process.env.PUBLIC_URL + "/join"}>JOIN</a>
             </li>
             <li>
               {" "}
-              <a href="/project1/mypage">ORDER</a>
+              <a href={process.env.PUBLIC_URL + "/mypage"}>ORDER</a>
             </li>
             <li>
               {" "}
-              <a href="/project1/mypage">MY PAGE</a>
+              <a href={process.env.PUBLIC_URL + "/mypage"}>MY PAGE</a>
             </li>
           </ul>
         </div>
