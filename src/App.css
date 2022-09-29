@@ -593,13 +593,15 @@ ul {
   font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
     "돋움", "AppleGothic", "Apple SD Gothic Neo", sans-serif;
   width: 100%;
-  margin: 70px;
-  /* margin-left: 300px; */
+  /* margin: 70px;
+  margin-left: 300px; */
   text-align: left;
   color: gray;
   display: flex;
   align-content: center;
   justify-content: center;
+  /* display: block;
+  margin: 0 auto; */
 }
 .join_ {
   font-family: "Montserrat", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum,
@@ -607,6 +609,9 @@ ul {
   margin-top: 70px;
 }
 
+.join td {
+  color: lightgray;
+}
 td {
   padding: 30px;
   border-bottom: 1px solid rgb(198, 189, 189);
@@ -614,6 +619,9 @@ td {
 /* .join .th {
   width: "50px";
 } */
+
+/*==========================================================*/
+
 @media screen and (max-width: 1249px) {
   .App {
     width: auto;
