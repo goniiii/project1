@@ -21,16 +21,14 @@ function Home() {
       {/* <Scroll></Scroll> */}
 
       <header className="header_home">
-        <video width="100%" muted autoPlay loop>
+        <video width="70%" muted autoPlay loop>
           <source
             src={process.env.PUBLIC_URL + "/video/main_video.mp4"}
             type="video/mp4"
           ></source>
         </video>
         <section>
-          <div className="videoText">
-            <h1>Our Granola</h1>
-          </div>
+          <div className="videoText"></div>
         </section>
       </header>
 

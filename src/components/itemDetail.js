@@ -53,20 +53,9 @@ function ItemDetail() {
                     style={{ marginLeft: "100px", marginTop: "30px" }}
                   ></input>
                 </sapn>
-                <Button
-                  variant="light"
-                  style={{ width: "30px" }}
-                  onClick={() => {}}
-                >
-                  up
-                </Button>
-                <Button variant="light" style={{ width: "30px" }}>
-                  down
-                </Button>
               </li>
               <li>
                 <span style={{ marginTop: "30px" }}>결제금액</span>
-                <sapn>원</sapn>
               </li>
             </ul>
           </div>
@@ -225,20 +214,10 @@ function Comp({ tabIndex }) {
 
             <img src="./img/detailInfo2.jpg"></img>
           </div>,
-          <div className="reviewBoard">
-            <div>
-              <h2>REVIEW</h2>
-            </div>
+          <div className="reviewBoard" style={{ padding: "100px" }}>
+            <div></div>
             <div className="productReview">
-              <div>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </div>
+              <div></div>
             </div>
             {/* <input
               className="qna"
@@ -247,9 +226,9 @@ function Comp({ tabIndex }) {
             ></input> */}
             {/* <button style={{ margin: "20px" }}>작성하기</button> */}
           </div>,
-          <div>
+          <div style={{ padding: "100px" }}>
             <form>
-              <input
+              {/* <input
                 className="qna"
                 type="text"
                 style={{ marginTop: "100px" }}
@@ -268,11 +247,11 @@ function Comp({ tabIndex }) {
               >
                 작성하기
               </button>
-              <p>{inputValue}</p>
+              <p>{inputValue}</p> */}
             </form>
           </div>,
-          <div>
-            <img src="/img/info.jpg" style={{ marginTop: "100px" }}></img>
+          <div style={{ padding: "100px" }}>
+            {/* <img src="./img/info.jpg" style={{ marginTop: "100px" }}></img> */}
           </div>,
         ][tabIndex]
       }

@@ -153,6 +153,7 @@ body {
   font-size: 200px;
   color: #ffffff;
   opacity: 0.7;
+  display: block;
 }
 
 /* 홈화면 브랜드 소개글 */
@@ -204,6 +205,7 @@ body {
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 10px;
   align-content: space-between;
+  margin-left: 150px;
   /* color: rgb(159, 176, 129, 0.8); */
   font-family: "Nanum Myeongjo", serif;
   margin-bottom: 100px;
