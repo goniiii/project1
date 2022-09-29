@@ -49,7 +49,7 @@ function Login() {
       {user.email != "" ? (
         <div>
           <h2>
-            환영합니다! <span>{user.name}</span> 님!
+            환영합니다 !<span>{user.name}</span> 님
           </h2>
           <button onClick={Logout}>Logout</button>
         </div>

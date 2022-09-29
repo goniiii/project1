@@ -12,7 +12,7 @@ function LoginForm({ Login, error }) {
   return (
     <form onSubmit={submitHandler}>
       <div className="form-inner">
-        <h2>로그인</h2>
+        <h2>Login</h2>
         {/*ERROR! */}
         {error != "" ? <div className="error">{error}</div> : ""}
         <div className="form-group">
@@ -51,7 +51,9 @@ function LoginForm({ Login, error }) {
             value={details.password}
           ></input>
         </div>
-        <input type="submit" value="LOGIN"></input>
+        <div className="LoginButton">
+          <input type="submit" value="LOGIN"></input>
+        </div>
       </div>
     </form>
   );

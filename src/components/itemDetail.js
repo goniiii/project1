@@ -64,6 +64,10 @@ function ItemDetail() {
                   down
                 </Button>
               </li>
+              <li>
+                <span style={{ marginTop: "30px" }}>결제금액</span>
+                <sapn>원</sapn>
+              </li>
             </ul>
           </div>
           <div className="totalProducts">
